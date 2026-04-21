@@ -5,7 +5,7 @@ Unofficial daily-updated RSS feed for [claude.com/blog](https://claude.com/blog)
 ## Subscribe
 
 ```
-https://timhildebrandt.github.io/anthropic-rss/rss.xml
+https://tim-hilde.github.io/anthropic-rss/rss.xml
 ```
 
 Add this URL to your feed reader (Feedly, NetNewsWire, Miniflux, …).
@@ -23,12 +23,14 @@ A GitHub Actions cron job runs every day, scrapes `claude.com/blog` for new post
 3. In repo Settings → Pages, set Source = `main` branch, Folder = `/docs`
 4. Update `FEED_URL` in `src/feed.py` (or set `FEED_URL` as a repo variable/secret)
 5. Run the initial backfill manually:
+
    ```
    uv sync
    uv run python -m src.main --backfill
    git add data/posts.json docs/rss.xml && git commit -m "Initial backfill"
    git push
    ```
+
 6. The daily workflow in `.github/workflows/update-feed.yml` takes it from there
 
 ## Development

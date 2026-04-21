@@ -1,8 +1,8 @@
 """Scrape post listings and post content from claude.com/blog."""
 
+import logging
 import re
 import time
-import logging
 from datetime import datetime, timezone
 
 import requests
@@ -11,7 +11,7 @@ from bs4 import BeautifulSoup
 BASE_URL = "https://claude.com/blog"
 PAGINATION_PARAM = "d7430fcd_page"
 REQUEST_DELAY = 1.0
-USER_AGENT = "claude-blog-rss/1.0 (+https://github.com/timhildebrandt/anthropic-rss)"
+USER_AGENT = "claude-blog-rss/1.0 (+https://github.com/tim-hilde/anthropic-rss)"
 
 logger = logging.getLogger(__name__)
 
@@ -20,7 +20,9 @@ def _session() -> requests.Session:
     s = requests.Session()
     s.headers["User-Agent"] = USER_AGENT
     adapter = requests.adapters.HTTPAdapter(
-        max_retries=requests.adapters.Retry(total=3, backoff_factor=1, status_forcelist=[500, 502, 503, 504])
+        max_retries=requests.adapters.Retry(
+            total=3, backoff_factor=1, status_forcelist=[500, 502, 503, 504]
+        )
     )
     s.mount("https://", adapter)
     return s
@@ -46,12 +48,16 @@ def list_slugs(page: int = 1) -> list[tuple[str, str]]:
     seen: set[str] = set()
     results: list[tuple[str, str]] = []
 
-    for card in soup.find_all("div", attrs={"role": "listitem", "class": re.compile(r"\bblog_cms_item\b")}):
-        link = card.find("a", attrs={"data-cta": "Blog page", "href": re.compile(r"^/blog/[^/]+$")})
+    for card in soup.find_all(
+        "div", attrs={"role": "listitem", "class": re.compile(r"\bblog_cms_item\b")}
+    ):
+        link = card.find(
+            "a", attrs={"data-cta": "Blog page", "href": re.compile(r"^/blog/[^/]+$")}
+        )
         if link is None:
             continue
         slug = link["href"].lstrip("/blog/")
-        slug = link["href"][len("/blog/"):]
+        slug = link["href"][len("/blog/") :]
         title = (link.get("data-cta-copy") or "").strip()
         if slug and slug not in seen:
             seen.add(slug)
@@ -100,12 +106,16 @@ def fetch_post(slug: str) -> dict | None:
 
 def _extract_detail(soup: BeautifulSoup, label: str) -> str:
     """Pull the value text from a hero_blog_post_details_item with a given label."""
-    for item in soup.find_all("li", class_=re.compile(r"\bhero_blog_post_details_item\b")):
+    for item in soup.find_all(
+        "li", class_=re.compile(r"\bhero_blog_post_details_item\b")
+    ):
         label_el = item.find(class_=re.compile(r"\bu-foreground-tertiary\b"))
         if label_el and label_el.get_text(strip=True) == label:
             # Value is the next sibling div / link text
             value_els = item.find_all(class_=re.compile(r"\bu-text-style-body-3\b"))
-            texts = [el.get_text(strip=True) for el in value_els if el.get_text(strip=True)]
+            texts = [
+                el.get_text(strip=True) for el in value_els if el.get_text(strip=True)
+            ]
             if texts:
                 return texts[0]
     return ""
@@ -113,10 +123,17 @@ def _extract_detail(soup: BeautifulSoup, label: str) -> str:
 
 def _extract_detail_list(soup: BeautifulSoup, label: str) -> list[str]:
     """Pull all value texts (e.g. multiple categories) from a details item."""
-    for item in soup.find_all("li", class_=re.compile(r"\bhero_blog_post_details_item\b")):
+    for item in soup.find_all(
+        "li", class_=re.compile(r"\bhero_blog_post_details_item\b")
+    ):
         label_el = item.find(class_=re.compile(r"\bu-foreground-tertiary\b"))
         if label_el and label_el.get_text(strip=True) == label:
-            texts = [el.get_text(strip=True) for el in item.find_all(["a", "div"], class_=re.compile(r"\bu-text-style-body-3\b"))]
+            texts = [
+                el.get_text(strip=True)
+                for el in item.find_all(
+                    ["a", "div"], class_=re.compile(r"\bu-text-style-body-3\b")
+                )
+            ]
             return [t for t in texts if t]
     return []
 
@@ -136,7 +153,9 @@ def _parse_date(date_str: str) -> datetime | None:
     return None
 
 
-def scrape_all_pages(max_pages: int = 20, delay: float = REQUEST_DELAY) -> list[tuple[str, str]]:
+def scrape_all_pages(
+    max_pages: int = 20, delay: float = REQUEST_DELAY
+) -> list[tuple[str, str]]:
     """Walk all listing pages and return unique (slug, title) pairs."""
     all_slugs: dict[str, str] = {}
     for page in range(1, max_pages + 1):

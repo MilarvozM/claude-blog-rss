@@ -14,7 +14,7 @@ FEED_LINK = "https://claude.com/blog"
 FEED_LANGUAGE = "en"
 
 # Override via FEED_URL env var (set to your GitHub Pages URL once known)
-_DEFAULT_FEED_URL = "https://timhildebrandt.github.io/anthropic-rss/rss.xml"
+_DEFAULT_FEED_URL = "https://tim-hilde.github.io/anthropic-rss/rss.xml"
 
 
 def render(posts: list[dict], feed_url: str | None = None) -> str:
@@ -59,6 +59,8 @@ def render(posts: list[dict], feed_url: str | None = None) -> str:
         if post.get("html_body"):
             fe.content(post["html_body"], type="html")
         elif post.get("title"):
-            fe.content(f'<p><a href="{post["url"]}">{post["title"]}</a></p>', type="html")
+            fe.content(
+                f'<p><a href="{post["url"]}">{post["title"]}</a></p>', type="html"
+            )
 
     return fg.rss_str(pretty=True).decode("utf-8")
