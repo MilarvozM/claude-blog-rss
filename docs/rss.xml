@@ -8,7 +8,231 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 14 May 2026 08:31:55 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 15 May 2026 08:43:55 +0000</lastBuildDate>
+    <item>
+      <title>How Claude Code works in large codebases: Best practices and where to start</title>
+      <link>https://claude.com/blog/how-claude-code-works-in-large-codebases-best-practices-and-where-to-start</link>
+      <description>&lt;div class="u-rich-text-blog u-margin-trim w-richtext"&gt;&lt;div class="w-embed"&gt;&lt;style&gt;
+  /* Fluid breakout for blog embeds + code blocks */
+  .u-rich-text-blog .w-embed,
+  .u-rich-text-blog pre.w-code-block {
+    --max-w: 860px;
+    --gutter: 24px;
+    --available: calc(100vw - (var(--gutter) * 2));
+    --w: min(var(--max-w), var(--available));
+    width: var(--w);
+    max-width: var(--w);
+    margin-left: calc((640px - var(--w)) / 2);
+    margin-right: calc((640px - var(--w)) / 2);
+    box-sizing: border-box;
+  }
+  @media (max-width: 720px) {
+    .u-rich-text-blog .w-embed,
+    .u-rich-text-blog pre.w-code-block {
+      width: 100%;
+      max-width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+    }
+    /* Constrain the post column to the viewport so nothing overflows the page */
+    .blog_post_layout.u-column-custom,
+    .blog_post_content_wrap,
+    .u-rich-text-blog {
+      max-width: 100% !important;
+      box-sizing: border-box;
+    }
+    html,
+    body {
+      overflow-x: hidden;
+    }
+  }
+
+  /* Embed inner wrappers: scroll horizontally when content overflows */
+  .u-rich-text-blog .w-embed figure {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+  }
+  .u-rich-text-blog .w-embed figure &gt; div {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Tables: ratios on wider screens, natural width + scroll on mobile */
+  .u-rich-text-blog .w-embed table {
+    width: 100% !important;
+    table-layout: fixed !important;
+  }
+  .u-rich-text-blog .w-embed table th:nth-child(1),
+  .u-rich-text-blog .w-embed table td:nth-child(1) {
+    width: 22%;
+  }
+  .u-rich-text-blog .w-embed table th:nth-child(2),
+  .u-rich-text-blog .w-embed table td:nth-child(2) {
+    width: 39%;
+  }
+  .u-rich-text-blog .w-embed table th:nth-child(3),
+  .u-rich-text-blog .w-embed table td:nth-child(3) {
+    width: 39%;
+  }
+  .u-rich-text-blog .w-embed td code,
+  .u-rich-text-blog .w-embed th code {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+    white-space: normal;
+  }
+  @media (max-width: 639px) {
+    .u-rich-text-blog .w-embed table {
+      width: auto !important;
+      min-width: 640px !important;
+      table-layout: auto !important;
+    }
+    .u-rich-text-blog .w-embed table th,
+    .u-rich-text-blog .w-embed table td {
+      min-width: 0 !important;
+      width: auto !important;
+    }
+  }
+
+  /* Code blocks */
+  .u-rich-text-blog pre.w-code-block {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  @media (max-width: 639px) {
+    .u-rich-text-blog pre.w-code-block {
+      font-size: 0.82rem;
+    }
+  }
+
+  /* 5-column comparison tables (e.g. Claude Code components)
+     Scoped via :has() so 3-column tables above are untouched. */
+  .u-rich-text-blog .w-embed table:has(thead tr th:nth-child(5)) {
+    font-size: var(--_typography---font-size--body-3);
+    line-height: 1.55;
+  }
+  .u-rich-text-blog .w-embed table:has(thead tr th:nth-child(5)) th,
+  .u-rich-text-blog .w-embed table:has(thead tr th:nth-child(5)) td {
+    font-size: var(--_typography---font-size--body-3);
+    line-height: 1.55;
+    padding: 16px 18px;
+    overflow-wrap: anywhere;
+    word-break: normal;
+    hyphens: none;
+    vertical-align: top;
+  }
+  /* Column ratios: Component | What it is | When it loads | Best for | Common confusion */
+  .u-rich-text-blog .w-embed table:has(thead tr th:nth-child(5)) th:nth-child(1),
+  .u-rich-text-blog .w-embed table:has(thead tr th:nth-child(5)) td:nth-child(1) {
+    width: 16%;
+  }
+  .u-rich-text-blog .w-embed table:has(thead tr th:nth-child(5)) th:nth-child(2),
+  .u-rich-text-blog .w-embed table:has(thead tr th:nth-child(5)) td:nth-child(2) {
+    width: 21%;
+  }
+  .u-rich-text-blog .w-embed table:has(thead tr th:nth-child(5)) th:nth-child(3),
+  .u-rich-text-blog .w-embed table:has(thead tr th:nth-child(5)) td:nth-child(3) {
+    width: 15%;
+  }
+  .u-rich-text-blog .w-embed table:has(thead tr th:nth-child(5)) th:nth-child(4),
+  .u-rich-text-blog .w-embed table:has(thead tr th:nth-child(5)) td:nth-child(4) {
+    width: 24%;
+  }
+  .u-rich-text-blog .w-embed table:has(thead tr th:nth-child(5)) th:nth-child(5),
+  .u-rich-text-blog .w-embed table:has(thead tr th:nth-child(5)) td:nth-child(5) {
+    width: 24%;
+  }
+
+  @media (max-width: 639px) {
+    .u-rich-text-blog .w-embed table:has(thead tr th:nth-child(5)) th,
+    .u-rich-text-blog .w-embed table:has(thead tr th:nth-child(5)) td {
+      padding: 12px 14px;
+      line-height: 1.5;
+    }
+  }
+&lt;/style&gt;&lt;/div&gt;&lt;p&gt;Claude Code is running in production across multi-million-line monorepos, decades-old legacy systems, distributed architectures spanning dozens of repositories, and at organizations with thousands of developers. These environments present challenges that smaller, simpler codebases don’t, whether that’s build commands that differ across every subdirectory or legacy code spread across folders with no shared root.&lt;/p&gt;&lt;p&gt;This article covers the patterns we've observed that have led to successful adoption of Claude Code at scale. We use “large codebase” to refer to a wide range of deployments: monorepos with millions of lines, legacy systems built over decades, dozens of microservices across separate repositories, or any combination of the above. That also includes codebases running on languages that teams don't always associate with AI coding tools, such as C, C++, C#, Java, PHP. (Claude Code performs better than most teams expect it to in those cases, particularly as of recent model releases.) While every large codebase deployment is shaped by its specific version control, team structure, and accumulated conventions, the patterns here generalize across them and are a good starting point for teams considering adopting Claude Code.&lt;/p&gt;&lt;h2&gt;How Claude Code navigates large codebases&lt;/h2&gt;&lt;p&gt;Claude Code navigates a codebase the way a software engineer would: it traverses the file system, reads files, uses grep to find exactly what it needs, and follows references across the codebase. It operates locally on the developer’s machine and doesn’t require a codebase index to be built, maintained, or uploaded to a server. &lt;/p&gt;&lt;p&gt;The AI coding tools relied on RAG-based retrieval by embedding the entire codebase and retrieving relevant chunks at query time. At large scale, those systems can fail because embedding pipelines can’t keep up with active engineering teams. By the time a developer queries the index, it reflects the codebase as it existed days, weeks, or even hours ago. Retrieval then returns a function the team renamed two weeks ago, or references a module that was deleted in the last sprint, with no indication that either is out of date.&lt;/p&gt;&lt;p&gt;Agentic search avoids those failure modes. There's no embedding pipeline or centralized index to maintain as thousands of engineers commit new code. Each developer's instance works from the live codebase. &lt;/p&gt;&lt;p&gt;But the approach has a tradeoff: it works best when Claude has enough starting context to know where to look. This means the quality of Claude's navigation is shaped by how well the codebase is set up, layering context with CLAUDE.md files and skills. If you ask it to find all instances of a vague pattern across a billion-line codebase, you’ll hit context-window limits before the work begins. Teams that invest in codebase setup see better results.&lt;/p&gt;&lt;h2&gt;The harness matters as much as the model&lt;/h2&gt;&lt;p&gt;One of the most common misconceptions about Claude Code is that its capabilities are solely defined by the model used. Teams focus on a model’s benchmarks and how it performs on test tasks. In practice, the ecosystem built around the model—the harness—determines how Claude Code performs more than the model alone.&lt;/p&gt;&lt;p&gt;The harness is built from five extension points—CLAUDE.md files, hooks, skills, plugins, and MCP servers—each serving a different function. The order in which teams build them matters, as each layer builds on what came before. Two additional capabilities, LSP integrations and subagents, round out the setup. Below, we explain what each of these components and capabilities do: &lt;/p&gt;&lt;p&gt;&lt;a href="https://code.claude.com/docs/en/memory" target="_blank"&gt;&lt;strong&gt;CLAUDE.md&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt; files come first&lt;/strong&gt;. These are context files that Claude reads automatically at the start of every session: root file for the big picture, subdirectory files for local conventions. They give Claude the codebase knowledge it needs to do anything well. Because they load in every session regardless of the task, keeping them focused on what applies broadly will prevent them from becoming a drag on performance.&lt;/p&gt;&lt;p&gt;&lt;a href="https://code.claude.com/docs/en/hooks-guide" target="_blank"&gt;&lt;strong&gt;Hooks&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt; make the setup self-improving&lt;/strong&gt;. Most teams think of hooks as scripts that prevent Claude from doing something wrong, but their more valuable use is continuous improvement. A stop hook can reflect on what happened during a session and propose CLAUDE.md updates while the context is fresh. A start hook can load team-specific context dynamically so every developer gets the right setup for their module without manual configuration. For automated checks like linting and formatting, hooks enforce the rules deterministically and produce more consistent results than relying on Claude to remember an instruction.&lt;/p&gt;&lt;p&gt;&lt;a href="https://code.claude.com/docs/en/skills" target="_blank"&gt;&lt;strong&gt;Skills&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt; keep the right expertise available on-demand without bloating every session. &lt;/strong&gt;In a large codebase with dozens of task types, not all expertise needs to be present in every session. Skills solve this through &lt;a href="https://platform.claude.com/docs/en/agents-and-tools/agent-skills/best-practices" target="_blank"&gt;progressive disclosure&lt;/a&gt;, offloading specialized workflows and domain knowledge that would otherwise compete for context space and loading them only when the task calls for it. For example, a security review skill loads when Claude is assessing code for vulnerabilities, while a document processing skill loads when a code change is made and documentation needs to be updated.&lt;/p&gt;&lt;p&gt;Skills can also be scoped to specific paths so they only activate in the relevant part of the codebase. A team that owns a payments service can bind their deployment skill to that directory, so it never auto-loads when someone is working elsewhere in the monorepo.&lt;/p&gt;&lt;p&gt;&lt;a href="https://code.claude.com/docs/en/plugins" target="_blank"&gt;&lt;strong&gt;Plugins&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt; distribute what works.&lt;/strong&gt; One challenge with large codebases is that &lt;em&gt;good&lt;/em&gt; setups can stay tribal. A plugin bundles skills, hooks, and MCP configurations into a single installable package, so when a new engineer installs that plugin on day one, they will immediately have the same context and capabilities as those who have been using Claude already. Plugin updates can be distributed across the organization through &lt;a href="https://support.claude.com/en/articles/13837433-manage-claude-cowork-plugins-for-your-organization" target="_blank"&gt;managed marketplaces&lt;/a&gt;. &lt;/p&gt;&lt;p&gt;For example, a large retail organization we work with built a skill connecting Claude to their internal analytics platform so that business analysts could pull performance data without leaving their workflow. They distributed it as a plugin before the broad rollout to the business.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Language server protocol (LSP) integrations give Claude the same navigation a developer has in their IDE.&lt;/strong&gt; Most large-codebase IDEs already have an LSP running, powering "go to definition" and "find all references." Surfacing this to Claude gives it symbol-level precision: it can follow a function call to its definition, trace references across files, and distinguish between identically named functions in different languages. Without it, Claude pattern-matches on text and can land on the wrong symbol. One enterprise software company we worked with deployed LSP integrations org-wide before their Claude Code rollout, specifically to make C and C++ navigation reliable at scale. For multi-language codebases, this is one of the highest-value investments.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;MCP servers extend everything.&lt;/strong&gt; MCP servers are how Claude connects to internal tools, data sources, and APIs that it can't otherwise reach. The most sophisticated teams built MCP servers exposing structured search as a tool Claude can call directly. Others connect Claude to internal documentation, ticketing systems, or analytics platforms.&lt;/p&gt;&lt;p&gt;&lt;a href="https://code.claude.com/docs/en/sub-agents" target="_blank"&gt;&lt;strong&gt;Subagents&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt; split exploration from editing.&lt;/strong&gt; A subagent is an isolated Claude instance with its own context window that takes a task, does the work, and returns only the final result to the parent. Once the harness is in place, some teams spin up a read-only subagent to map a subsystem and write findings to a file, then have the main agent edit with the full picture. &lt;/p&gt;&lt;figure class="w-richtext-align-fullwidth w-richtext-figure-type-image" style="max-width:2880pxpx"&gt;&lt;div&gt;&lt;img alt="" loading="lazy" src="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6a04aaf1c37c6196e5ee19bb_fig1-the-claude-code-harness-v1%402x.png"/&gt;&lt;/div&gt;&lt;figcaption&gt;&lt;em&gt;Claude Code’s extension layer at a glance.&lt;/em&gt;&lt;/figcaption&gt;&lt;/figure&gt;&lt;p&gt;The table below summarizes what each component does, when it loads, and the most common mistakes we see with each:&lt;/p&gt;&lt;div class="w-embed"&gt;&lt;figure&gt;
+&lt;div role="region" tabindex="0"&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Component&lt;/th&gt;
+&lt;th&gt;What it is&lt;/th&gt;
+&lt;th&gt;When it loads&lt;/th&gt;
+&lt;th&gt;Best for&lt;/th&gt;
+&lt;th&gt;Common confusion&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;CLAUDE.md&lt;/td&gt;
+&lt;td&gt;Context file Claude reads automatically&lt;/td&gt;
+&lt;td&gt;Every session&lt;/td&gt;
+&lt;td&gt;Project-specific conventions, codebase knowledge&lt;/td&gt;
+&lt;td&gt;Using it for reusable expertise that belongs in a skill&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Hooks&lt;/td&gt;
+&lt;td&gt;Scripts that run at key moments&lt;/td&gt;
+&lt;td&gt;Triggered by events&lt;/td&gt;
+&lt;td&gt;Automating consistent behavior, capturing session learnings&lt;/td&gt;
+&lt;td&gt;Using prompts for things that should run automatically&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Skills&lt;/td&gt;
+&lt;td&gt;Packaged instructions for specific task types&lt;/td&gt;
+&lt;td&gt;On demand, when relevant&lt;/td&gt;
+&lt;td&gt;Reusable expertise across sessions and projects&lt;/td&gt;
+&lt;td&gt;Loading everything into CLAUDE.md instead&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Plugins&lt;/td&gt;
+&lt;td&gt;Bundled skills, hooks, MCP configs&lt;/td&gt;
+&lt;td&gt;Always available once configured&lt;/td&gt;
+&lt;td&gt;Distributing a working setup across the org&lt;/td&gt;
+&lt;td&gt;Letting good setups stay tribal&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Language server protocol (LSP)*&lt;/td&gt;
+&lt;td&gt;Real-time code intelligence via language specific servers&lt;/td&gt;
+&lt;td&gt;Always available once configured&lt;/td&gt;
+&lt;td&gt;Symbol-level navigation and automatic error detection in typed languages&lt;/td&gt;
+&lt;td&gt;Assuming that it's automatic&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;MCP servers&lt;/td&gt;
+&lt;td&gt;Connections to external tools and data&lt;/td&gt;
+&lt;td&gt;Always available once configured&lt;/td&gt;
+&lt;td&gt;Giving Claude access to internal tools it can't otherwise reach&lt;/td&gt;
+&lt;td&gt;Building MCP connections before the basics are working&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Subagents*&lt;/td&gt;
+&lt;td&gt;Separate Claude instances for specific tasks&lt;/td&gt;
+&lt;td&gt;When invoked&lt;/td&gt;
+&lt;td&gt;Splitting exploration from editing, parallel work&lt;/td&gt;
+&lt;td&gt;Running exploration and editing in the same session&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td colspan="5" style="font-size:13px; padding-top:16px; border-bottom:none;"&gt;*LSP is accessed through the plugin layer. Subagents are a delegation capability rather than a configured extension point.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/figure&gt;&lt;/div&gt;&lt;h2&gt;Three configuration patterns from successful deployments&lt;/h2&gt;&lt;p&gt;How you configure Claude Code for a large codebase depends heavily on how that codebase is structured. Still, three patterns appeared consistently across the deployments we observed.&lt;/p&gt;&lt;h3&gt;Making the codebase navigable at scale&lt;/h3&gt;&lt;p&gt;Claude’s ability to help in a large codebase is bounded by its ability to find the right context. Too much context loaded into every session degrades performance, while too little context leaves Claude to navigate blind. The most effective deployments invest upfront in making the codebase legible to Claude. A few patterns appear consistently:&lt;/p&gt;&lt;ul role="list"&gt;&lt;li&gt;&lt;strong&gt;Keeping CLAUDE.md files lean and layered.&lt;/strong&gt; Claude loads them additively as it moves through the codebase: root file for the big picture, subdirectory files for local conventions. The root file should be pointers and critical gotchas only; everything else drifts into noise.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Initializing in subdirectories, not at the repo root.&lt;/strong&gt; Claude works best when it's scoped to the part of the codebase that's actually relevant to the task. In monorepos, this can feel counterintuitive because tooling often assumes root access, but Claude automatically walks up the directory tree and loads every CLAUDE.md file it finds along the way, so root-level context is never lost.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Scoping test and lint commands per subdirectory.&lt;/strong&gt; Running the full suite when Claude changed one service causes timeouts and wastes context on irrelevant output. CLAUDE.md files at the subdirectory level should specify the commands that apply to that part of the codebase. This works well for service-oriented codebases where each directory has its own test and build commands. In compiled-language monorepos with deep cross-directory dependencies, per-subdirectory scoping is harder to achieve and may require project-specific build configurations.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Using &lt;code&gt;.&lt;/code&gt;&lt;/strong&gt;&lt;code&gt;ignore&lt;/code&gt;&lt;strong&gt; files to exclude generated files, build artifacts, and third-party code.&lt;/strong&gt; Committing &lt;code&gt;permissions.deny&lt;/code&gt; rules in &lt;code&gt;.claude/settings.json&lt;/code&gt; means the exclusions are version-controlled, so every developer on the team gets the same noise reduction without configuring it themselves. In some codebases, generated files are themselves the subject of development work. Developers who work on code generators can override project-level exclusions in their local settings without affecting the rest of the team.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Building codebase maps when the directory structure doesn’t do the work. &lt;/strong&gt;For organizations where code isn’t consolidated in a conventional directory structure, a lightweight markdown file at the repo root listing each top-level folder with a one-line description of what lives there gives Claude a table of contents it can scan before opening files. For codebases with hundreds of top-level folders, this works best as a layered approach: the root file describes only the highest-level structure, and subdirectory CLAUDE.md files provide the next level of detail, loading on demand as Claude moves through the tree. For simpler cases, @-mentioning the specific files or directories Claude should reference can do the same job.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Running LSP servers so Claude searches by symbol, not by string. &lt;/strong&gt;Grep for a common function name in a large codebase returns thousands of matches and Claude burns context opening files to figure out which matters. LSP returns only the references that point to the same symbol, so the filtering happens before Claude reads anything.&lt;strong&gt; &lt;/strong&gt;Setting this up requires installing a &lt;a href="https://code.claude.com/docs/en/discover-plugins#code-intelligence" target="_blank"&gt;code intelligence plugin&lt;/a&gt; for your language and the corresponding language server binary; the Claude Code documentation covers the available plugins and troubleshooting.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;One caveat&lt;/strong&gt;: there are edge cases where even the hierarchical CLAUDE.md approach breaks down, for example codebases with hundreds of thousands of folders and millions of files, or legacy systems on non-git version control. We will address their challenges in future installments of this series.&lt;/p&gt;&lt;h3&gt;Actively maintaining CLAUDE.md files as model intelligence evolves &lt;/h3&gt;&lt;p&gt;As models evolve, instructions written for your current model can work against a future one. CLAUDE.md files that guided Claude through patterns it used to struggle with may either become unnecessary or actively constraining when the next model ships. For example, a CLAUDE.md rule that tells Claude to break every refactor into single-file changes may have helped an earlier model stay on track but would prevent a newer one from making coordinated cross-file edits it handles well. &lt;/p&gt;&lt;p&gt;Skills and hooks built to compensate for specific model limitations, whether in the model’s reasoning or in Claude Code’s own tooling, become overhead once those limitations no longer exist. A hook that intercepted file writes to enforce p4 edit in a Perforce codebase, for example, became redundant once Claude Code added native Perforce mode.&lt;/p&gt;&lt;p&gt;Teams should expect to do a meaningful configuration review every three to six months, but it's also worth doing one whenever performance feels like it's plateaued after major model releases. &lt;/p&gt;&lt;h3&gt;Assigning ownership for Claude Code management and adoption&lt;/h3&gt;&lt;p&gt;Technical configuration alone doesn't drive adoption. The organizations that got it right invested in the organizational layer, too.&lt;/p&gt;&lt;p&gt;The rollouts that spread fastest had a dedicated infrastructure investment before broad access. A small team, sometimes even just one person, wired up the tooling so Claude already fit developer workflows when they first touched it. At one company, a couple of engineers built a suite of plugins and MCPs that were available on day one. At another, an entire team focused on managing AI coding tools had the infrastructure in place before the rollout began. In both cases, developers' first experience was productive rather than frustrating, and adoption spread from there.&lt;/p&gt;&lt;figure class="w-richtext-align-fullwidth w-richtext-figure-type-image" style="max-width:2880pxpx"&gt;&lt;div&gt;&lt;img alt="" loading="lazy" src="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6a04e25f1984beb50dc5525b_fig2-phases-of-claude-code-rollout-v1%402x.png"/&gt;&lt;/div&gt;&lt;/figure&gt;&lt;p&gt;The teams doing this work today tend to sit under developer experience or developer productivity, which is typically the function responsible for onboarding new engineers and building developer tooling. An emerging role in several organizations is an agent manager: a hybrid PM/engineer function dedicated to managing the Claude Code ecosystem. For organizations without a dedicated team, the minimum viable version is a DRI: one person with ownership over the Claude Code configuration, the authority to make calls on settings, permissions policy, the plugin marketplace, and CLAUDE.md conventions, and the responsibility to keep them current.&lt;/p&gt;&lt;p&gt;Bottoms-up adoption generates enthusiasm but can fragment without someone to centralize what works. You need to have an individual or a team assemble and evangelize the right Claude Code conventions (such as a standardized CLAUDE.md hierarchy or a curated set of skills and plugins). Without that work, knowledge will stay tribal and adoption will plateau. &lt;/p&gt;&lt;p&gt;In large organizations, especially those in regulated industries, governance questions come up early, such as: who controls which skills and plugins are available, how do you prevent thousands of engineers from independently rebuilding the same thing, how do you make sure AI-generated code goes through the same review process as human-generated code? To address these early on, we suggest starting with a defined set of approved skills, required code review processes, and limited initial access, and expand as confidence builds. &lt;/p&gt;&lt;p&gt;We’ve observed the smoothest deployments at organizations that establish cross-functional working groups early by bringing together engineering, information security, and governance representatives to define requirements together and build a rollout roadmap.&lt;/p&gt;&lt;h2&gt;Applying these patterns to your organization&lt;/h2&gt;&lt;p&gt;Claude Code is designed around conventional software engineering environments where engineers are the primary codebase contributors, the repo uses Git, and code follows standard directory structures. Most large codebases fit this mold, but non-traditional setups such as game engines with large binary assets, environments with unconventional version control, or non-engineers contributing to the codebase require additional configuration work. Our guidance assumes a conventional setup and the patterns we’ve described have worked across many of our customers.  Any remaining complexity requires judgment specific to your codebase, tooling, and organization. That's where Anthropic's Applied AI team works directly with engineering teams to translate these patterns into your organization’s specific requirements.&lt;/p&gt;&lt;figure class="w-richtext-align-fullwidth w-richtext-figure-type-image" style="max-width:2880pxpx"&gt;&lt;div&gt;&lt;img alt="" loading="lazy" src="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6a04e2860abbe67418ca0f8b_fig3-getting-started-checklist-v2%402x.png"/&gt;&lt;/div&gt;&lt;/figure&gt;&lt;p&gt;&lt;em&gt;Get started with &lt;/em&gt;&lt;a href="https://claude.com/product/claude-code/enterprise" target="_blank"&gt;&lt;em&gt;Claude Code for Enterprise&lt;/em&gt;&lt;/a&gt;&lt;em&gt;.&lt;/em&gt;&lt;/p&gt;&lt;p&gt;‍&lt;/p&gt;&lt;p&gt;&lt;strong&gt;&lt;em&gt;Acknowledgements:&lt;/em&gt;&lt;/strong&gt;&lt;em&gt; Special thanks to Alon Krifcher, Charmaine Lee, Chris Concannon, Harsh Patel, Henrique Savelli, Jason Schwartz, Jonah Dueck and Kirby Kohlmorgen from Anthropic’s Applied AI team for sharing their experience deploying Claude Code at scale, and to Amit Navindgi at Zoox for providing feedback on this article.&lt;/em&gt;&lt;/p&gt;&lt;p&gt;‍&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="false">https://claude.com/blog/how-claude-code-works-in-large-codebases-best-practices-and-where-to-start</guid>
+      <category>Enterprise AI</category>
+      <pubDate>Thu, 14 May 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>The founder's playbook: Building an AI-native startup</title>
+      <link>https://claude.com/blog/the-founders-playbook</link>
+      <description>&lt;div class="u-rich-text-blog u-margin-trim w-richtext"&gt;&lt;p&gt;AI is reshaping how startups are being built. Founders who've never written a line of code before are shipping production applications, reaching revenue before scaling headcount, and building tools to automate their most tedious workflows. The founder's role is shifting from individual contributor to orchestrator, allowing them to focus on the work only they can do. &lt;/p&gt;&lt;p&gt;We put together a practical playbook for building an AI-native startup. It remaps the four core stages of the startup lifecycle—Idea, MVP, Launch, and Scale—for what's possible in 2026, with the goals, exit criteria, common failure modes, and AI-powered exercises that work at each one.&lt;/p&gt;&lt;p&gt;In this playbook, we share:&lt;/p&gt;&lt;ul role="list"&gt;&lt;li&gt;How to validate a problem hypothesis, map a competitive landscape, and run customer discovery with AI&lt;/li&gt;&lt;li&gt;Architecture, scope, and security practices that keep AI-generated MVP codebases from accruing technical debt&lt;/li&gt;&lt;li&gt;A measurement framework for distinguishing genuine product-market fit from early hype&lt;/li&gt;&lt;li&gt;A Launch-stage operating system that replaces founder attention with agentic workflows&lt;/li&gt;&lt;li&gt;A product matrix for when and how to use Chat, Claude Cowork, and Claude Code across each stage of the startup journey&lt;/li&gt;&lt;li&gt;Founder stories from Ambral, Anything, Carta Healthcare, HumanLayer, Vulcan Technologies, and more &lt;/li&gt;&lt;/ul&gt;&lt;p&gt;These best practices were written for founders deciding how to architect their company around AI from day one and for the early operators helping them get there.&lt;/p&gt;&lt;p&gt;Check it out, &lt;a href="https://cdn.prod.website-files.com/6889473510b50328dbb70ae6/69fe2a55b93bb0732b1fe33c_The-Founders-Playbook-05062026_v3%20(1).pdf" target="_blank"&gt;here&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;&lt;em&gt;Get started with &lt;/em&gt;&lt;a href="https://claude.com/programs/startups" target="_blank"&gt;&lt;em&gt;Claude&lt;/em&gt;&lt;/a&gt;&lt;em&gt; today.&lt;/em&gt;&lt;/p&gt;&lt;p&gt;‍&lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="false">https://claude.com/blog/the-founders-playbook</guid>
+      <category>Claude Code</category>
+      <pubDate>Thu, 14 May 2026 00:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>Best practices for computer and browser use with Claude</title>
       <link>https://claude.com/blog/best-practices-for-computer-and-browser-use-with-claude</link>
@@ -962,22 +1186,6 @@
       <guid isPermaLink="false">https://claude.com/blog/onboarding-claude-code-like-a-new-developer-lessons-from-17-years-of-development</guid>
       <category>Claude Code</category>
       <pubDate>Tue, 28 Apr 2026 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Built-in memory for Claude Managed Agents</title>
-      <link>https://claude.com/blog/claude-managed-agents-memory</link>
-      <description>&lt;div class="u-rich-text-blog u-margin-trim w-richtext"&gt;&lt;p&gt;Memory on &lt;a href="https://claude.com/blog/claude-managed-agents"&gt;Claude Managed Agents&lt;/a&gt; is available today in public beta. Your agents can now learn from every session, using an intelligence-optimized memory layer that balances performance with flexibility. Because memories are stored as files, developers can export them, manage them via the API, and keep full control over what agents retain.&lt;/p&gt;&lt;figure class="w-richtext-align-fullwidth w-richtext-figure-type-image" style="max-width:3840pxpx"&gt;&lt;div&gt;&lt;img alt="" loading="lazy" src="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/69e911b25f02df256c8cba87_Claude-Blog-CMA-Memory.png"/&gt;&lt;/div&gt;&lt;/figure&gt;&lt;h2&gt;Agents that learn across sessions&lt;/h2&gt;&lt;p&gt;Managed Agents pairs production infrastructure with a harness tuned for performance. Memory extends that: it’s optimized against internal benchmarks for long-running agents that improve across sessions and share what they've learned with each other.&lt;/p&gt;&lt;p&gt;We've found that agents are most effective with memory when it builds on the tools they already use. Memory on Managed Agents mounts directly onto a filesystem, so Claude can rely on the same bash and code execution capabilities that make it effective at agentic tasks. With filesystem-based memory, &lt;a href="https://www.anthropic.com/news/claude-opus-4-7#:~:text=Memory.%20Opus%204.7%20is%20better%20at%20using%20file%20system%2Dbased%20memory.%20It%20remembers%20important%20notes%20across%20long%2C%20multi%2Dsession%20work%2C%20and%20uses%20them%20to%20move%20on%20to%20new%20tasks%20that%2C%20as%20a%20result%2C%20need%20less%20up%2Dfront%20context."&gt;our latest models&lt;/a&gt; save more comprehensive, well-organized memories and are more discerning about what to remember for a given task.&lt;/p&gt;&lt;h2&gt;Portable memories for production-grade agents &lt;/h2&gt;&lt;p&gt;Memory is built for enterprise deployments, with scoped permissions, audit logs, and full programmatic control. Stores can be shared across multiple agents with different access scopes. For example, an org-wide store might be read-only, while per-user stores allow reads and writes. Multiple agents can work concurrently against the same store without overwriting each other.&lt;/p&gt;&lt;p&gt;Memories are files that can be exported and independently managed via the API, giving developers full control. All changes are tracked with a detailed audit log, so you can tell which agent and session a memory came from. You can roll back to an earlier version or redact content from history. Updates also surface in the &lt;a href="https://platform.claude.com/"&gt;Claude Console&lt;/a&gt; as session events, so developers can trace what an agent learned and where it came from.&lt;/p&gt;&lt;h2&gt;&lt;strong&gt;What teams are building&lt;/strong&gt;&lt;/h2&gt;&lt;p&gt;Teams have been using memory to close feedback loops, speed up verification, and replace custom retrieval infrastructure:&lt;/p&gt;&lt;ul role="list"&gt;&lt;li&gt;&lt;strong&gt;Netflix&lt;/strong&gt; agents carry context across sessions, including insights that took multiple turns to uncover and corrections from a human mid-conversation, instead of manually updating prompts and skills.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Rakuten's&lt;/strong&gt; task-based long-running agents use memory to learn from every session and avoid repeating past mistakes, cutting first-pass errors by 97%, all within workspace-scoped, observable boundaries.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Wisedocs&lt;/strong&gt; built their document verification pipeline on Managed Agents, using cross-session memory to spot and remember recurring document issues, speeding up verification by 30%.&lt;strong&gt;‍&lt;/strong&gt;&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Ando&lt;/strong&gt; is building their workplace messaging platform on Managed Agents, capturing how each organization interacts instead of building memory infrastructure themselves.&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="false">https://claude.com/blog/claude-managed-agents-memory</guid>
-      <category>Product announcements</category>
-      <pubDate>Thu, 23 Apr 2026 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>New connectors in Claude for everyday life</title>
-      <link>https://claude.com/blog/connectors-for-everyday-life</link>
-      <description>&lt;div class="u-rich-text-blog u-margin-trim w-richtext"&gt;&lt;p&gt;Today we’re expanding what you can connect to Claude. Alongside the work tools you already use, you can now connect the apps you use throughout your week, including AllTrails, Instacart, Audible, TripAdvisor, Intuit TurboTax, and more. &lt;/p&gt;&lt;figure class="w-richtext-align-fullwidth w-richtext-figure-type-video" style="padding-bottom:56.206088992974244%"&gt;&lt;div&gt;&lt;iframe allowfullscreen="true" frameborder="0" scrolling="no" src="https://www.youtube.com/embed/U9jGOz_Lcbo" title="All your everyday apps, in one conversation"&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;/figure&gt;&lt;h2&gt;How people have been using connectors&lt;/h2&gt;&lt;p&gt;Since launching in July 2025, the Claude &lt;a href="https://claude.ai/directory" target="_blank"&gt;directory&lt;/a&gt; has grown to over 200 connectors, spanning popular apps for design, finance, productivity, and health used by millions of people every day. We’ve found that people often connect multiple apps and use them together in a single conversation with Claude. For example, a product manager will pull a query from Amplitude, turn it into a Canva deck, and drop the link into Asana for the team, all without leaving the conversation. &lt;/p&gt;&lt;p&gt;This expansion extends that functionality to more of the tools you use outside of work. Starting today, Claude connects to AllTrails, Audible, Booking.com, Instacart, Intuit Credit Karma, Intuit TurboTax, Resy, Spotify, StubHub, Taskrabbit, Thumbtack, TripAdvisor, Uber, Uber Eats, and Viator, with more on the way. &lt;/p&gt;&lt;figure class="w-richtext-align-fullwidth w-richtext-figure-type-image" style="max-width:2048pxpx"&gt;&lt;div&gt;&lt;img alt="" loading="lazy" src="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/69ea41d624ff5cbc6ca6c54b_1cbf2332.png"/&gt;&lt;/div&gt;&lt;/figure&gt;&lt;h2&gt;Connectors dynamically show up in conversations&lt;/h2&gt;&lt;p&gt;We’ve also changed how connectors show up in conversations. Claude now suggests the right app for what you’re doing, like finding a reservation, adding to a grocery cart, or identifying a flight. It’s working from what you’ve told it: your preferences, your context, your conversation. &lt;/p&gt;&lt;p&gt;This all happens inside your conversation. Ask Claude to recommend a weekend hike, and AllTrails will surface trails nearby that match your preferences. You can then refine the recommendations by asking for something shorter, more scenic, or dog-friendly without leaving the thread. When more than one connected app could help answer your question, Claude shows them all and lets you choose. &lt;/p&gt;&lt;h2&gt;You control what you see and share&lt;/h2&gt;&lt;p&gt;Claude is ad-free and will stay that way. There are no paid placements or sponsored answers in conversations with Claude. When two connectors could help, you see both, ranked by what’s most useful to you. &lt;/p&gt;&lt;p&gt;Connecting a service gives Claude access to it on your behalf. Your data from that app isn’t used to train our models, and the app doesn’t see your other conversations with Claude. You can also disconnect it at any time.&lt;/p&gt;&lt;p&gt;Claude suggests connectors and makes recommendations. But you stay in control of its actions: before it books or purchases something on your behalf, it’s designed to check with you first.&lt;/p&gt;&lt;h2&gt;Getting started&lt;/h2&gt;&lt;p&gt;The more apps you connect, the more Claude can do. Claude suggests relevant connectors as you work, which you can install with a click on desktop or a few taps on mobile. Once connected, the service is available in every conversation. &lt;/p&gt;&lt;p&gt;Connectors are available on all plans, with mobile in beta. See the full list at&lt;a href="http://claude.ai/directory"&gt; &lt;/a&gt;&lt;a href="http://claude.ai/directory/connectors" target="_blank"&gt;claude.ai/directory/connectors&lt;/a&gt;.  If you build a product that would be useful in Claude, &lt;a href="https://claude.com/docs/connectors/overview" target="_blank"&gt;submit it to our directory here&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;For more information on getting started with connectors, along with security and privacy best practices when connecting data sources to Claude, visit our &lt;a href="https://support.claude.com/en/articles/11176164-use-connectors-to-extend-claude-s-capabilities" target="_blank"&gt;Help Center&lt;/a&gt;. &lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="false">https://claude.com/blog/connectors-for-everyday-life</guid>
-      <category>Product announcements</category>
-      <pubDate>Thu, 23 Apr 2026 00:00:00 +0000</pubDate>
     </item>
   </channel>
 </rss>
