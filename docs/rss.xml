@@ -8,7 +8,15 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 19 May 2026 09:34:02 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 20 May 2026 08:58:59 +0000</lastBuildDate>
+    <item>
+      <title>Using Claude Code: The unreasonable effectiveness of HTML</title>
+      <link>https://claude.com/blog/using-claude-code-the-unreasonable-effectiveness-of-html</link>
+      <description>&lt;div class="u-rich-text-blog u-margin-trim w-richtext"&gt;&lt;p&gt;Markdown has become the dominant file format used by agents to communicate with humans. It’s simple, portable, has some rich text capability and is easy to edit. Claude has even gotten surprisingly good at using ASCII to make diagrams inside of Markdown files.&lt;/p&gt;&lt;p&gt;But as agents have become more and more powerful, I’ve found that Markdown has become an increasingly restrictive format. Specifically, I find it difficult to read a Markdown file of more than a hundred lines; I want to use Claude to generate richer visualizations, color and diagrams; and I want to be able to share these outputs more easily.&lt;/p&gt;&lt;p&gt;I also am increasingly not editing these files myself, but using them as specs and reference files. When I do make edits, I’m usually prompting Claude to edit them, which removes one of Markdown’s largest benefits.&lt;/p&gt;&lt;p&gt;Instead, I’ve started preferring HTML as an output format instead of Markdown and increasingly see this pattern being applied by others on the Claude Code team. In this post, I share why and how our team uses HTML to produce richer, more readable Claude Code outputs. If you'd like to follow along, you can start using these &lt;a href="https://thariqs.github.io/html-effectiveness/#code-review" target="_blank"&gt;HTML file templates&lt;/a&gt; for common use cases, too. &lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="false">https://claude.com/blog/using-claude-code-the-unreasonable-effectiveness-of-html</guid>
+      <category>Claude Code</category>
+      <pubDate>Wed, 20 May 2026 00:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>New in Claude Managed Agents: self-hosted sandboxes and MCP tunnels</title>
       <link>https://claude.com/blog/claude-managed-agents-updates</link>
@@ -1170,15 +1178,6 @@
       <guid isPermaLink="false">https://claude.com/blog/building-ai-agents-for-the-enterprise</guid>
       <category>Agents</category>
       <pubDate>Thu, 30 Apr 2026 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Claude API skill now in CodeRabbit, JetBrains, Resolve AI, and Warp</title>
-      <link>https://claude.com/blog/claude-api-skill</link>
-      <description>&lt;div class="u-rich-text-blog u-margin-trim w-richtext"&gt;&lt;p&gt;Today, CodeRabbit, JetBrains, Resolve AI, and Warp are bundling the &lt;a href="https://github.com/anthropics/skills/tree/main/skills/claude-api"&gt;claude-api skill&lt;/a&gt;, giving developers production-ready Claude API code wherever they build. First introduced in Claude Code in March, the skill is now in more of the tools developers already use.&lt;/p&gt;&lt;h2&gt;Building with the Claude API skill&lt;/h2&gt;&lt;p&gt;The &lt;code&gt;claude-api &lt;/code&gt;skill captures the details that make Claude API code work well, like which agent pattern fits a given job, what parameters change between model generations, and when to apply prompt caching. The result is fewer errors, better caching, cleaner agent patterns, and smoother model migrations. &lt;/p&gt;&lt;p&gt;It stays current as our SDKs change. When a new model is released or the API gains a feature, Claude already knows.&lt;/p&gt;&lt;p&gt;Anywhere the skill is available, ask Claude to:&lt;/p&gt;&lt;ul role="list"&gt;&lt;li&gt;&lt;strong&gt;"Improve my cache hit rate."&lt;/strong&gt; The skill applies prompt caching rules many developers miss.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;"Add context compaction to my agent."&lt;/strong&gt; It walks you through the compaction primitives and agent patterns in our docs.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;"Upgrade me to the latest Claude model."&lt;/strong&gt; Claude reviews your code and walks you through updating model names, prompts, and effort settings for a new model like&lt;a href="https://www.anthropic.com/news/claude-opus-4-7"&gt; Opus 4.7&lt;/a&gt;. In Claude Code, you can also run this directly with &lt;code&gt;/claude-api migrate.&lt;/code&gt;&lt;strong&gt;‍&lt;/strong&gt;&lt;/li&gt;&lt;li&gt;&lt;strong&gt;"Build a deep research agent for my industry."&lt;/strong&gt; Claude walks you through configuring&lt;a href="https://platform.claude.com/docs/en/managed-agents/overview"&gt; Claude Managed Agents&lt;/a&gt;, so long-running research is a few prompts, not a custom project. In Claude Code, you can also run this directly with &lt;code&gt;/claude-api managed-agents-onboard&lt;/code&gt;.&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="false">https://claude.com/blog/claude-api-skill</guid>
-      <category>Agents</category>
-      <category>Claude Code</category>
-      <pubDate>Wed, 29 Apr 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
       <title>Deploying Claude across the enterprise with Claude Cowork</title>
