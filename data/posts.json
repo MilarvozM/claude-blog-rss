@@ -1938,5 +1938,16 @@
       "Product announcements"
     ],
     "html_body": "<div class=\"u-rich-text-blog u-margin-trim w-richtext\"><p>Starting today, Claude models are generally available in Microsoft Foundry, hosted on Azure. Claude runs in your Azure environment with the authentication, billing, and governance controls your teams already use. You can choose where inference is processed, including a US data zone for teams with data residency requirements. Anthropic operates the inference and is the data processor.</p></div>"
+  },
+  "getting-started-with-loops": {
+    "slug": "getting-started-with-loops",
+    "url": "https://claude.com/blog/getting-started-with-loops",
+    "title": "Getting started with loops",
+    "date_str": "June 30, 2026",
+    "pub_date": "2026-06-30T00:00:00+00:00",
+    "categories": [
+      "Claude Code"
+    ],
+    "html_body": "<div class=\"u-rich-text-blog u-margin-trim w-richtext\"><p>There’s a lot of talk right now about \"designing loops\" instead of prompting your coding agent. If you spend some time on X trying to pin down what a loop actually is, you'll come across multiple different answers. </p><p>On the Claude Code team, we define <strong>loops as agents repeating cycles of work until a stop condition is met</strong>. We categorize a few different types of loops based on:</p><ul role=\"list\"><li>How they are triggered</li><li>How they are stopped</li><li>What Claude Code primitive is used</li><li>What type of task is most appropriate for each.</li></ul><p>We’ll cover the main loop types, when to use each, and how to maintain code quality while managing token usage. Not all tasks require complex loops; start with the simplest solution and use these patterns selectively. </p></div>"
   }
 }
