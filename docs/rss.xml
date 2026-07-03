@@ -8,7 +8,15 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 02 Jul 2026 08:48:32 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 03 Jul 2026 08:54:52 +0000</lastBuildDate>
+    <item>
+      <title>Giving admins more visibility and control over Claude spend</title>
+      <link>https://claude.com/blog/giving-admins-more-visibility-and-control-over-claude-usage-and-spend</link>
+      <description>&lt;div class="u-rich-text-blog u-margin-trim w-richtext"&gt;&lt;p&gt;We’re introducing richer admin analytics, model-level entitlements, and spend alerts for Claude Enterprise. As Claude takes on increasingly difficult and complex agentic work across the organization, usage and cost patterns look different from a standard chat tool. These controls give admins the visibility to understand how Claude is being used and the tools to manage costs. &lt;/p&gt;&lt;p&gt;Today's additions build on controls Anthropic already provides: spend caps at every level, access and model routing, a usage analytics dashboard with exports and an Analytics API, and effort controls. Richer analytics and more granular cost controls are the newest additions to a control surface we've been building on for months.&lt;/p&gt;&lt;figure class="w-richtext-align-center w-richtext-figure-type-image"&gt;&lt;div&gt;&lt;img alt="" loading="lazy" src="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6a45ed484e5998965a180707_Cost-controls-admin-viz-thumbnail.png"/&gt;&lt;/div&gt;&lt;/figure&gt;&lt;h2&gt;Track adoption and cost&lt;/h2&gt;&lt;p&gt;The &lt;a href="https://support.claude.com/en/articles/12883420-view-usage-analytics-for-team-and-enterprise-plans"&gt;analytics dashboard for admins&lt;/a&gt; now shows usage and cost by group and by user, with output like artifacts created, files edited, skills and connectors used displayed directly next to their cost. Admins can filter by the SCIM groups their IT team already manages, so the breakdown follows their existing org chart.&lt;/p&gt;&lt;p&gt;Claude Code gets richer insights with two new tabs focused on value and usage inside the admin console. Usage shows active developers, session counts, and top commands across the org, and is updated daily. The value tab summarizes usage and cost data to help admins understand value of Claude Code at a glance, estimating productivity lift, cost per commit, and annual value. Every formula is visible in the tab, and the inputs are adjustable. &lt;/p&gt;&lt;p&gt;&lt;a href="https://support.claude.com/en/articles/14729354-use-analytics-chat-to-ask-claude-about-usage"&gt;Analytics chat&lt;/a&gt; can now answer a much broader set of questions and produce richer artifacts that you can dive deeper into. Admins can ask questions in plain language — "Which teams doubled their Claude usage this month?" or "Where are we getting the most value per seat?" — and Claude returns charts that can be exported and shared with stakeholders.&lt;/p&gt;&lt;p&gt;Usage and cost data is available programmatically through the &lt;a href="https://platform.claude.com/docs/en/manage-claude/analytics-api"&gt;Analytics API&lt;/a&gt;, so finance and IT can bring Claude usage and cost data into the tools they already run — like Datadog Cloud Cost Management and CloudZero — and see it alongside the rest of their cloud and AI spend. Results can be filtered by date range, team, product, or model. Skills report their own usage and cost, and new endpoints track plugin adoption and artifact creation.&lt;/p&gt;&lt;p&gt;Admins can extend usage visibility to individual users — cost, product and model breakdowns, and progress against spend limits — so no one hits a surprise cutoff. Users can also see their own usage trends over time, including which products, models, and skills they rely on most, and how that activity adds up in spend.&lt;/p&gt;&lt;h2&gt;Controls for managing spend&lt;/h2&gt;&lt;p&gt;&lt;a href="https://support.claude.com/en/articles/15694740-manage-model-access-for-your-organization"&gt;Model defaults and entitlements&lt;/a&gt; let admins set which Claude model new conversations start with across chat, Cowork, and Claude Code so routine work doesn't necessarily default to the most expensive option. Admins control which models are available to specific roles or across the entire organization. &lt;/p&gt;&lt;p&gt;Spend-threshold alerts notify admins at 75% and 90% of an org-level spend limit, giving them time to raise the cap before anyone gets blocked mid-task. Users receive in-app notifications at 75% and 95% thresholds and can request a limit increase directly from their admin without leaving Claude. &lt;/p&gt;&lt;p&gt;For organizations managing limits across many groups, the &lt;a href="https://platform.claude.com/docs/en/manage-claude/spend-limits-api#example-workflows"&gt;Admin API&lt;/a&gt; moves cost-control workflows into scripts so controls scale with the org. Automate increase-request reviews, identify members close to their spend limit, and flag rapidly changing usage all at scale. &lt;/p&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="false">https://claude.com/blog/giving-admins-more-visibility-and-control-over-claude-usage-and-spend</guid>
+      <category>Product announcements</category>
+      <pubDate>Thu, 02 Jul 2026 00:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>Getting started with loops</title>
       <link>https://claude.com/blog/getting-started-with-loops</link>
@@ -235,139 +243,6 @@
       <guid isPermaLink="false">https://claude.com/blog/the-claude-cowork-product-guide</guid>
       <category>Enterprise AI</category>
       <pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Running an AI-native engineering org</title>
-      <link>https://claude.com/blog/running-an-ai-native-engineering-org</link>
-      <description>&lt;div class="u-rich-text-blog u-margin-trim w-richtext"&gt;&lt;div class="w-embed"&gt;&lt;style&gt;
-  /* Fluid breakout for blog embeds + code blocks */
-  .u-rich-text-blog .w-embed,
-  .u-rich-text-blog pre.w-code-block {
-    --max-w: 860px;
-    --gutter: 24px;
-    --available: calc(100vw - (var(--gutter) * 2));
-    --w: min(var(--max-w), var(--available));
-    width: var(--w);
-    max-width: var(--w);
-    margin-left: calc((640px - var(--w)) / 2);
-    margin-right: calc((640px - var(--w)) / 2);
-    box-sizing: border-box;
-  }
-  @media (max-width: 720px) {
-    .u-rich-text-blog .w-embed,
-    .u-rich-text-blog pre.w-code-block {
-      width: 100%;
-      max-width: 100%;
-      margin-left: 0;
-      margin-right: 0;
-    }
-    /* Constrain the post column to the viewport so nothing overflows the page */
-    .blog_post_layout.u-column-custom,
-    .blog_post_content_wrap,
-    .u-rich-text-blog {
-      max-width: 100% !important;
-      box-sizing: border-box;
-    }
-    html,
-    body {
-      overflow-x: hidden;
-    }
-  }
-  /* Embed inner wrappers: scroll horizontally when content overflows */
-  .u-rich-text-blog .w-embed figure {
-    width: 100% !important;
-    max-width: 100% !important;
-    margin: 0 !important;
-  }
-  .u-rich-text-blog .w-embed figure &gt; div {
-    width: 100% !important;
-    max-width: 100% !important;
-    overflow-x: auto !important;
-    -webkit-overflow-scrolling: touch;
-  }
-  /* Tables: ratios on wider screens, natural width + scroll on mobile */
-  .u-rich-text-blog .w-embed table {
-    width: 100% !important;
-    table-layout: fixed !important;
-  }
-  .u-rich-text-blog .w-embed table th:nth-child(1),
-  .u-rich-text-blog .w-embed table td:nth-child(1) {
-    width: 22%;
-  }
-  .u-rich-text-blog .w-embed table th:nth-child(2),
-  .u-rich-text-blog .w-embed table td:nth-child(2) {
-    width: 39%;
-  }
-  .u-rich-text-blog .w-embed table th:nth-child(3),
-  .u-rich-text-blog .w-embed table td:nth-child(3) {
-    width: 39%;
-  }
-  .u-rich-text-blog .w-embed td code,
-  .u-rich-text-blog .w-embed th code {
-    overflow-wrap: anywhere;
-    word-break: break-word;
-    white-space: normal;
-  }
-  @media (max-width: 639px) {
-    .u-rich-text-blog .w-embed table {
-      width: auto !important;
-      min-width: 640px !important;
-      table-layout: auto !important;
-    }
-    .u-rich-text-blog .w-embed table th,
-    .u-rich-text-blog .w-embed table td {
-      min-width: 0 !important;
-      width: auto !important;
-    }
-  }
-  /* Code blocks */
-  .u-rich-text-blog pre.w-code-block {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-  }
-  @media (max-width: 639px) {
-    .u-rich-text-blog pre.w-code-block {
-      font-size: 0.82rem;
-    }
-  }
-&lt;/style&gt;&lt;/div&gt;&lt;figure class="w-richtext-align-fullwidth w-richtext-figure-type-video" style="padding-bottom:56.206088992974244%"&gt;&lt;div&gt;&lt;iframe allowfullscreen="true" frameborder="0" scrolling="no" src="https://www.youtube.com/embed/igO8iyca2_g?start=433" title="Running an AI-native engineering org"&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;/figure&gt;&lt;p&gt;For years, engineering bandwidth was the expensive part of building applications. Every process we used to have around software planning and shipping, first waterfall and then agile, was built around that cost. &lt;/p&gt;&lt;p&gt;I started my career in the early 2000s working on Visual Studio. In those days we shipped software on CD-ROMs with hard manufacturing deadlines. Once we could distribute software online, we began increasing to shipping updates continuously. Now we’re changing the way we work again, this time around the time and people it takes to write software. &lt;/p&gt;&lt;p&gt;On the Claude Code team, writing code, writing tests, and refactoring rarely slows us down anymore. But the bottlenecks didn’t go away when agentic coding took away the actual need to type code. Verification, code review, and security took their place.&lt;/p&gt;&lt;p&gt;We can all generate a lot of code really fast now, but this also brings up new questions: Is this code correct? How is it maintained? And one of the top questions I get from fellow engineering leaders: “How are humans keeping up with how you’re doing code reviews?”&lt;em&gt; &lt;/em&gt;&lt;/p&gt;&lt;h2&gt;The processes that quietly stopped working&lt;/h2&gt;&lt;p&gt;We all put processes in place for a reason, to close a gap or make something work better. But when that gap no longer exists and those processes become obsolete, they rarely go away on their own. When the Claude Code team began using agentic coding as our default way of working, a lot of our existing processes stopped working. Here are the norms we rewrote, and why. &lt;/p&gt;&lt;h3&gt;Planning: shift roadmaps to just in time&lt;/h3&gt;&lt;p&gt;The old norm was to spend a lot more time pre-planning because coding time was expensive. When I first joined the Claude Code team, we wrote a pretty good six month roadmap, and then &lt;em&gt;because&lt;/em&gt; of Claude Code, so many things changed that it was out of date by month three. &lt;/p&gt;&lt;p&gt;Engineering speed and throughput is different now, so the way we plan sprints has changed. I call it just-in-time (JIT) planning, almost like JIT compiling: how do you do just the right amount at the right time? Our planning ritual shifted away from design docs toward discussions in PRs or prototypes. The space moves fast so we don’t do a lot of product reviews. Our process now is let's prototype, get a lot of internal users on it, and start acting on their feedback.&lt;/p&gt;&lt;h3&gt;Context gathering: ask Claude, not the author&lt;/h3&gt;&lt;p&gt;When engineers wrote code, the first step to getting an answer to most questions was to find the person who wrote the code. Now, since all our PRs are assisted by Claude, "Who made this change?" is no longer sufficient. Our new norm is to go a level deeper: what do you actually need to know? For instance: Are you looking for who caused a regression? An expert to answer a customer question? Or context on a decision? You ask Claude that question, and consider whether Claude can answer it directly, also with more data and context.&lt;/p&gt;&lt;p&gt;On the Claude Code team, no matter what that question is, our process is to also ask “Is there a way to automate it?” For example, having Claude summarize customer feedback channels every morning went from a ritual I did manually with my coffee to something I just have running automatically in the background.&lt;/p&gt;&lt;h3&gt;Code review: trust but verify&lt;/h3&gt;&lt;p&gt;We use &lt;a href="https://code.claude.com/docs/en/code-review" target="_blank"&gt;Code Review&lt;/a&gt; heavily. Claude handles all the style and linting, PR feedback requests, catching bugs and fixing them before a full commit, and adding tests. Where we still definitely want a human is expertise. &lt;/p&gt;&lt;p&gt;The new norm is human review where it matters: for legal review, I always want my legal partner involved in risk tolerance. For trust boundaries and security-sensitive code, I want the domain experts. Product managers and designers also need to be involved with product sense and taste. &lt;/p&gt;&lt;p&gt;It’s important to continually evaluate, though, because the right balance of trust vs. verify will keep changing as the models improve. What you need humans for today might look different with the next model.&lt;/p&gt;&lt;h3&gt;Team makeup: blurring roles&lt;/h3&gt;&lt;p&gt;Claude and AI have reshaped roles across the team. Our PMs code a lot now, which is fun to see. With Claude, you have nontraditional coders now being able to do more engineering, and you have engineers who take on things like content and design, work that were traditionally not on the technical side. &lt;/p&gt;&lt;p&gt;On the Claude Code engineering team, I’ve indexed heavily on two profiles. One is creative builders with product sense: the dreamers who are deeply curious and passionate about shipping products that solve problems. The other one is engineers with deep systems expertise. For example, when I joined the team, I noticed we were missing experts with systems backgrounds and we needed that when building &lt;a href="https://www.anthropic.com/news/claude-code-on-the-web" target="_blank"&gt;Claude Code on the Web&lt;/a&gt;, to ensure we can run Claude everywhere. &lt;/p&gt;&lt;p&gt;What I index on less, on the other hand, is raw throughput; the models handle that. The more important question is where you still need human expertise, and that’s where I’d focus.&lt;/p&gt;&lt;div class="w-embed"&gt;&lt;figure&gt;
-&lt;div role="region" tabindex="0"&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th scope="col"&gt;&lt;/th&gt;
-&lt;th scope="col"&gt;Before&lt;/th&gt;
-&lt;th scope="col"&gt;After&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;th scope="row"&gt;Planning&lt;/th&gt;
-&lt;td&gt;Six-month product roadmaps.&lt;/td&gt;
-&lt;td&gt;Just-in-time (JIT) planning: prototype, put internal users on it, and act on their feedback.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th scope="row"&gt;Context gathering&lt;/th&gt;
-&lt;td&gt;Find the person who wrote the code and ask them.&lt;/td&gt;
-&lt;td&gt;Ask Claude first. Then ask whether what you are asking about can be automated.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th scope="row"&gt;Code review&lt;/th&gt;
-&lt;td&gt;Humans review everything.&lt;/td&gt;
-&lt;td&gt;Claude handles style, bugs, and tests. Humans review where domain expertise is important.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th scope="row"&gt;Team makeup&lt;/th&gt;
-&lt;td&gt;Fixed roles: engineers write code, PMs plan, designers design.&lt;/td&gt;
-&lt;td&gt;Roles blur: PMs prototype, engineers take on design and context. Hire for creative builders and deep systems expertise.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;/div&gt;
-&lt;/figure&gt;&lt;/div&gt;&lt;h2&gt;How we rolled out our new norms&lt;/h2&gt;&lt;p&gt;As these norms changed, some aspects were mandated as team principles and others we let small sub-teams (pods) figure out on their own. There is a set of the Claude Code core team principles that are non-negotiable “must dos”:&lt;/p&gt;&lt;ul role="list"&gt;&lt;li&gt;&lt;strong&gt;Relentlessly dogfood your product:&lt;/strong&gt; Every Claude Code team member, including cross-functional partners, uses Claude Code (and also Claude Cowork). We’re always thinking of ways to get Claude to help us do our work faster, and more efficiently. &lt;/li&gt;&lt;li&gt;&lt;strong&gt;Keep the team flat as possible.&lt;/strong&gt; When I joined Claude Code I wanted every manager to start out as an IC first, learn how to be an effective engineer on the team by shipping, and really live through and understand what it’s like to be an engineer at Anthropic. We have one overall team mission on Claude Code and Claude Cowork. Managers support pods of work while keeping the team agile so people can move to where the work is.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Don’t  hesitate to kill processes that no longer work:&lt;/strong&gt; Finally, we relentlessly question why we do things the way we do. When something doesn’t make sense anymore, team members have explicit permission to question and kill old processes. &lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Within these few rules, though, each pod has a lot of agency. They have room to adapt how they use Claude to do triage, how they run any planning rituals or standups, and which workflows get “Claudified” first. &lt;/p&gt;&lt;h2&gt;How to know your new processes are sticking&lt;/h2&gt;&lt;p&gt;Here are three numbers every engineering leader should start tracking now as they roll out changes.&lt;/p&gt;&lt;ul role="list"&gt;&lt;li&gt;&lt;strong&gt;Onboarding ramp time goes down:&lt;/strong&gt; How soon can an engineer, a designer, or a PM start being effective? On our team this is much faster than a year ago, and engineers ship real code now within their first week.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;PR cycle time goes down:&lt;/strong&gt; This one's interesting to dig into because it might help you identify where your pipeline is struggling to scale. As we’re generating so much more code, sometimes build systems and continuous integration (CI) may struggle to keep up.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Claude-assisted commits going up&lt;/strong&gt;: For us, by default, every commit is Claude-assisted. I don't think I've seen a non-Claude-assisted commit in the last four months.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;On the third bullet, don't confuse throughput with success. Throughput is one metric, but the real metric is measuring the thing you're trying to solve. With the right alignment, throughput can help you solve problems faster.&lt;/p&gt;&lt;h2&gt;Getting started&lt;/h2&gt;&lt;p&gt;If I were to leave you with one thing: &lt;strong&gt;pick your noisiest workflow.&lt;/strong&gt; That could be your most expensive workflow, the one you might be dreading, or that your team doesn't look forward to. And ask: is it still serving its purpose? If so, can you automate it? &lt;/p&gt;&lt;p&gt;I was once on a team that had an expensive weekly review, with a large number of  people in a meeting room. I noticed everybody was on their laptops except when it was their time to give a status report. They would pop their head up, say the status, and go back down to their laptops. I asked one simple question: “Why are we having this meeting again? It seems like an expensive use of our time.” And just that one question made everyone realize it wasn’t needed. So we canceled it.&lt;/p&gt;&lt;p&gt;So, ask yourself: what's one piece of your engineering workflow that you might consider automating or even dropping altogether? &lt;/p&gt;&lt;p&gt;‍&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="false">https://claude.com/blog/running-an-ai-native-engineering-org</guid>
-      <category>Claude Code</category>
-      <pubDate>Wed, 03 Jun 2026 00:00:00 +0000</pubDate>
     </item>
   </channel>
 </rss>
