@@ -8,7 +8,16 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 14 Aug 2026 07:16:03 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 15 Aug 2026 06:27:29 +0000</lastBuildDate>
+    <item>
+      <title>Maximizing the value of your Claude Code sessions</title>
+      <link>https://claude.com/blog/maximizing-the-value-of-your-claude-code-sessions</link>
+      <description>&lt;div class="u-rich-text-blog u-margin-trim w-richtext"&gt;&lt;h2&gt;TL;DR&lt;/h2&gt;&lt;ul role="list"&gt;&lt;li&gt;&lt;strong&gt;Run &lt;code&gt;/clear &lt;/code&gt;between tasks.&lt;/strong&gt; This prevents prior irrelevant context from being sent back to the model, which can reduce token usage.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Set your model and effort level before you start. &lt;/strong&gt;Changing either one mid-conversation can bust your prompt cache, which can increase token cost.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;@-mention files instead of naming them. &lt;/strong&gt;The file gets attached to your message directly, which saves a Read call, or a search if Claude has to go find it. &lt;/li&gt;&lt;li&gt;&lt;strong&gt;Add quiet flags to noisy commands, or run them in a subagent. &lt;/strong&gt;Command output is added to the conversation just like a file, and stays there for the rest of the session.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Run &lt;/strong&gt;&lt;strong&gt;&lt;code&gt;/context&lt;/code&gt;&lt;/strong&gt;&lt;strong&gt; once in a fresh session. &lt;/strong&gt;It shows what's loaded (&lt;code&gt;CLAUDE.md&lt;/code&gt;, MCP tool definitions), so you can cut out anything unnecessary.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;&lt;code&gt;/compact&lt;/code&gt;&lt;/strong&gt;&lt;strong&gt; before you take a break from your keyboard. &lt;/strong&gt;The prompt cache expires after an hour, and summarizing a conversation is much cheaper while it's still cached.&lt;/li&gt;&lt;/ul&gt;&lt;h2&gt;Maximizing value&lt;/h2&gt;&lt;p&gt;Until pretty recently, the tools you wrote code with were a flat fee (or free). Your editor cost the same whether you fixed one test or fifty that afternoon, so an individual task didn't really have a price of its own. &lt;/p&gt;&lt;p&gt;With agentic coding tools like Claude Code, it does. The same completed task can also cost different amounts depending on how you use it. &lt;/p&gt;&lt;p&gt;In one session, Claude reads the test and the file it covers, makes the edit, and is done in a handful of turns. In another, it greps around the repo first, reads a dozen files on its way to the same two, and every one of those turns also drags along everything else that's been read into the conversation since this morning.&lt;/p&gt;&lt;figure class="w-richtext-align-fullwidth w-richtext-figure-type-image" style="max-width:1360px"&gt;&lt;div&gt;&lt;img alt="" loading="lazy" src="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6a7f1946bc7cd69c4c8919db_be236b0d.png"/&gt;&lt;/div&gt;&lt;/figure&gt;&lt;p&gt;It's the same fix, but you spent a different number of tokens on it, and the whole time the model was also having to think about ten files it didn't need.&lt;/p&gt;&lt;p&gt;Being efficient with tokens doesn't mean using fewer of them overall. It means making sure the ones you do use go towards the thing you actually asked for.&lt;/p&gt;&lt;p&gt;So let's look at what decides the price of a token, then what decides how many of them a session sends, and along the way, what that means for how you run a session.&lt;/p&gt;&lt;em&gt;&lt;/em&gt;&lt;h2&gt;&lt;strong&gt;What decides the price of a token&lt;/strong&gt;&lt;/h2&gt;&lt;p&gt;You're billed per token, but what you're actually paying for is inference: the time it takes a GPU (or a TPU, or whatever the model happens to be running on) to run the model over your tokens. &lt;/p&gt;&lt;p&gt;Three things decide how much of that time a token takes: which model you're running, whether it's an input token (going in) or an output token (coming out), and whether it was cached.&lt;/p&gt;&lt;h3&gt;Model&lt;/h3&gt;&lt;p&gt;A bigger model does more work on both input and output tokens. Which model is worth it for which kind of work is a topic on its own, and we covered it in &lt;a href="https://claude.com/blog/claude-model-and-effort-level-in-claude-code"&gt;&lt;em&gt;Choosing a Claude model and effort level in Claude Code&lt;/em&gt;&lt;/a&gt;. &lt;/p&gt;&lt;p&gt;For this post, all you need to know is that everything else we're about to cover gets multiplied by the model's price: use a larger model when the problem is genuinely hard or ambiguous, and a smaller one when the work is routine.&lt;/p&gt;&lt;figure class="w-richtext-align-fullwidth w-richtext-figure-type-image" style="max-width:1360pxpx"&gt;&lt;div&gt;&lt;img alt="" loading="lazy" src="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6a7f1946bc7cd69c4c8919de_da980737.png"/&gt;&lt;/div&gt;&lt;figcaption&gt;&lt;em&gt;Curves are for illustration purposes only. They do not represent real benchmark data.&lt;/em&gt;&lt;/figcaption&gt;&lt;/figure&gt;&lt;/div&gt;</description>
+      <guid isPermaLink="false">https://claude.com/blog/maximizing-the-value-of-your-claude-code-sessions</guid>
+      <category>Claude Code</category>
+      <category>Enterprise AI</category>
+      <pubDate>Fri, 14 Aug 2026 00:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>Securing the frontier: How JetBrains evaluates and deploys Claude Fable 5</title>
       <link>https://claude.com/blog/how-jetbrains-evaluates-and-deploys-claude-fable-5</link>
@@ -158,43 +167,6 @@
       <guid isPermaLink="false">https://claude.com/blog/four-role-based-claude-certifications</guid>
       <category>Enterprise AI</category>
       <pubDate>Thu, 23 Jul 2026 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>How Outtake built a cyber investigator on Claude</title>
-      <link>https://claude.com/blog/how-outtake-built-a-cyber-investigator-on-claude</link>
-      <description>&lt;div class="u-rich-text-blog u-margin-trim w-richtext"&gt;&lt;p&gt;&lt;em&gt;In our series, &lt;/em&gt;&lt;strong&gt;How startups build with Claude,&lt;/strong&gt; we highlight how startups are transforming their industries with AI. In this article, we share how Outtake built an autonomous cyber investigator that detects, investigates, and dismantles digital threats, from cloned login pages to entire adversarial networks.&lt;/p&gt;&lt;div class="w-embed"&gt;&lt;figure&gt;
-&lt;div role="region" tabindex="0"&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th colspan="2" scope="colgroup"&gt;The quick pitch&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;th scope="row"&gt;Name&lt;/th&gt;
-&lt;td&gt;Outtake&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th scope="row"&gt;Founded&lt;/th&gt;
-&lt;td&gt;2023&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th scope="row"&gt;Founders&lt;/th&gt;
-&lt;td&gt;Alex Dhillon (CEO), formerly of Palantir's moonshot team&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;th scope="row"&gt;Growth&lt;/th&gt;
-&lt;td&gt;Grew annual recurring revenue 6x and its customer base more than 10x year-over-year, scanning 20M+ potential cyberattacks in 2025 alone.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;/div&gt;
-&lt;/figure&gt;&lt;/div&gt;&lt;p&gt;Even with strong safeguards and controls, bad actors can mask their use of AI in seemingly benign purposes that hide their malicious intent. Code generation platforms can create convincing login portals, agentic go-to-market tooling can power the distribution of phishing attacks, and image generation capabilities can spoof identity. Traditional cybersecurity defenses struggle to keep up.&lt;/p&gt;&lt;p&gt;“If you put on the bad actor's hat, it's actually a great time to be running attacks,” says Alex Dhillon, founder and CEO of AI cybersecurity platform &lt;a href="https://www.outtake.ai/"&gt;Outtake&lt;/a&gt;. “The average attack is not only executed faster because of AI, but it also captures deeper access due to AI”&lt;/p&gt;&lt;p&gt;Outtake unifies the full &lt;a href="https://www.outtake.ai/blog/2026-digital-trust-industry-pain-report"&gt;digital trust attack chain&lt;/a&gt; into a single defense, using fleets of AI agents to autonomously detect, investigate, and dismantle threats aimed at their customers, which include leading AI labs, major hedge funds, and US federal agencies. &lt;/p&gt;&lt;p&gt;Here’s how the Outtake team recently built the Recon Agent, a long-running autonomous cyber investigator, on Claude using &lt;a href="https://code.claude.com/docs/en/quickstart"&gt;Claude Code&lt;/a&gt; and the &lt;a href="https://code.claude.com/docs/en/agent-sdk/overview"&gt;Agent SDK&lt;/a&gt;.&lt;/p&gt;&lt;h2&gt;&lt;strong&gt;Agentic offense needs agentic defense&lt;/strong&gt;&lt;/h2&gt;&lt;p&gt;When targeting a company, attackers typically move through the same process: weaponize public data → build impersonations as lures → exploit internal systems. This process has been accelerated by AI.&lt;/p&gt;&lt;p&gt;Before breaking into anything, they harvest publicly available information about an organization, and its executives and employees.&lt;/p&gt;&lt;p&gt;They then turn that intelligence into bait, like a fake website with a fraudulent login page, to trick victims into handing over credentials. The access gained from these lures help the attacker get inside the perimeter to reach an organization’s most valuable and sensitive assets.&lt;/p&gt;&lt;p&gt; &lt;!--$--&gt;&lt;br/&gt;&lt;!--/$--&gt;This three-part sequence is predictable, but legacy security tooling guards only one slice at a time:&lt;/p&gt;&lt;ul role="list"&gt;&lt;li&gt;Threat intelligence tools monitor the public-data stage,&lt;/li&gt;&lt;li&gt;Brand protection tools watch for impersonations, and&lt;/li&gt;&lt;li&gt;Endpoint tools guard the internal systems. &lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Outtake’s Recon Agent investigates the full network behind an impersonation. Instead of just taking down a cloned login page, for example, the agent gathers and classifies evidence from the impersonation event. &lt;/p&gt;&lt;p&gt;It follows those leads to connected infrastructure, like a fake Telegram account that presents itself as “Customer Support,” and maps this adversarial network in a graph. The agent’s final step produces a report explaining the investigation process, a profile of the threat actor, and a reconstructed timeline of what the attacker did. &lt;/p&gt;&lt;p&gt;To carry out this sophisticated workflow, the Recon Agent can read, write, and run code. It can even interact with malicious login pages directly to see where stolen credentials actually go. &lt;/p&gt;&lt;p&gt;These investigations can require agents to run autonomously for long periods of time. Agent sessions run a median of 16 minutes, but routinely stretch to an hour and beyond; the longest run thus far lasted two hours of agentic work before returning results.&lt;/p&gt;&lt;/div&gt;</description>
-      <guid isPermaLink="false">https://claude.com/blog/how-outtake-built-a-cyber-investigator-on-claude</guid>
-      <category>Agents</category>
-      <category>Claude Code</category>
-      <pubDate>Wed, 22 Jul 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
       <title>Building verification loops in Claude Code with skills</title>
