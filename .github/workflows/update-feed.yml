@@ -4,6 +4,11 @@ on:
   schedule:
     - cron: "0 6 * * *"   # daily at 06:00 UTC
   workflow_dispatch:        # allow manual trigger
+    inputs:
+      backfill:
+        description: "Fetch all listing pages (use after clearing data/posts.json)"
+        type: boolean
+        default: false
 
 permissions:
   contents: write           # needed for git push
@@ -25,7 +30,7 @@ jobs:
         run: uv sync --no-dev
 
       - name: Run feed update
-        run: uv run python -m src.main
+        run: uv run python -m src.main ${{ inputs.backfill && '--backfill' || '' }}
 
       - name: Commit and push changes
         run: |
