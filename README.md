@@ -5,12 +5,12 @@ Unofficial daily-updated RSS feed for [claude.com/blog](https://claude.com/blog)
 ## Subscribe
 
 ```
-https://tim-hilde.github.io/anthropic-rss/rss.xml
+https://MilarvozM.github.io/claude-blog-rss/rss.xml
 ```
 
 Add this URL to your feed reader (Feedly, NetNewsWire, Miniflux, …).
 
-The feed is updated daily at 06:00 UTC and contains the 20 most recent posts with full article text.
+The feed is updated daily at 06:00 UTC and contains the 20 most recent posts as headlines and tags only — no article text.
 
 ## How it works
 

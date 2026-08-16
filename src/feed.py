@@ -1,18 +1,10 @@
 """Generate RSS 2.0 feed from post dicts.
 
-Modified from the original tim-hilde/anthropic-rss feed.py:
+Modified from the original upstream feed.py (anthropic-rss):
 instead of embedding the full article text in each entry, each item
-now only carries title + tags + link. You see what's new and what
-tags it's under, and decide yourself whether to click through.
-
-A/B TEST MODE
--------------
-Set the environment variable AB_TEST_FIELDS=1 before running to put
-DIFFERENT, clearly-labeled text into <description> vs <content:encoded>.
-Whichever one shows up in Feedly's preview pane tells you which field
-it actually reads from. Turn it back off (unset the env var, or set
-it to anything other than "1") once you've confirmed it, and rerun to
-restore the normal "Tags: ..." output.
+now only carries title + tags + link, plus the post's header
+illustration as a media image. You see what's new and what tags it's
+under, and decide yourself whether to click through.
 """
 
 import os
@@ -35,9 +27,10 @@ _DEFAULT_FEED_URL = "https://MilarvozM.github.io/claude-blog-rss/rss.xml"
 def render(posts: list[dict], feed_url: str | None = None) -> str:
     """Render posts (most-recent-first) to RSS 2.0 XML string."""
     feed_url = feed_url or os.environ.get("FEED_URL", _DEFAULT_FEED_URL)
-    ab_test = os.environ.get("AB_TEST_FIELDS") == "1"
 
     fg = FeedGenerator()
+    # Must be loaded before the first add_entry() or entries have no .media
+    fg.load_extension("media")
     fg.id(feed_url)
     fg.title(FEED_TITLE)
     fg.description(FEED_DESCRIPTION)
@@ -74,19 +67,17 @@ def render(posts: list[dict], feed_url: str | None = None) -> str:
 
         cat_label = ", ".join(categories) if categories else "Uncategorized"
 
-        if ab_test:
-            # Deliberately different text in each field so whichever one
-            # shows up in Feedly's preview identifies the field it reads.
-            fe.description(f"DESCRIPTION FIELD: Tags: {cat_label}")
-            fe.content(
-                f"<p>CONTENT:ENCODED FIELD: Tags: {cat_label}</p>", type="html"
-            )
-        else:
-            # Normal mode: no article body, just the tags line, mirrored
-            # in both fields so it works regardless of which one a given
-            # reader displays.
-            summary = f"Tags: {cat_label}"
-            fe.description(summary)
-            fe.content(f"<p>{summary}</p>", type="html")
+        # No article body, just the tags line, mirrored in both fields so it
+        # works regardless of which one a given reader displays.
+        summary = f"Tags: {cat_label}"
+        fe.description(summary)
+        fe.content(f"<p>{summary}</p>", type="html")
+
+        # The post's header illustration, as siblings of the text fields so
+        # readers get a thumbnail without the preview text changing.
+        image = post.get("image")
+        if image:
+            fe.media.content({"url": image, "medium": "image"})
+            fe.media.thumbnail({"url": image})
 
     return fg.rss_str(pretty=True).decode("utf-8")

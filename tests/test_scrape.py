@@ -5,7 +5,12 @@ from pathlib import Path
 import pytest
 from bs4 import BeautifulSoup
 
-from src.scrape import _extract_detail, _extract_detail_list, _parse_date
+from src.scrape import (
+    _extract_detail,
+    _extract_detail_list,
+    _extract_hero_image,
+    _parse_date,
+)
 
 FIXTURES = Path(__file__).parent / "fixtures"
 
@@ -76,6 +81,18 @@ def test_post_extracts_body_html():
     assert body_div is not None, "blog_post_content_wrap not found"
     text = body_div.get_text()
     assert len(text) > 200, "Article body seems too short"
+
+
+def test_post_extracts_hero_image():
+    soup = BeautifulSoup(post_html(), "lxml")
+    src = _extract_hero_image(soup)
+    assert src.startswith("https://"), f"Hero image not found: {src!r}"
+    assert src.endswith(".svg")
+
+
+def test_extract_hero_image_absent():
+    soup = BeautifulSoup("<div><img src='https://e/other.svg'></div>", "lxml")
+    assert _extract_hero_image(soup) == ""
 
 
 # ── date parser ───────────────────────────────────────────────────────────────

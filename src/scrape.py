@@ -11,7 +11,7 @@ from bs4 import BeautifulSoup
 BASE_URL = "https://claude.com/blog"
 PAGINATION_PARAM = "d7430fcd_page"
 REQUEST_DELAY = 1.0
-USER_AGENT = "claude-blog-rss/1.0 (+https://github.com/tim-hilde/anthropic-rss)"
+USER_AGENT = "claude-blog-rss/1.0 (+https://github.com/MilarvozM/claude-blog-rss)"
 
 logger = logging.getLogger(__name__)
 
@@ -100,6 +100,7 @@ def fetch_post(slug: str) -> dict | None:
         "date_str": date_str or "",
         "pub_date": pub_date.isoformat() if pub_date else "",
         "categories": categories,
+        "image": _extract_hero_image(soup),
         "html_body": html_body,
     }
 
@@ -136,6 +137,16 @@ def _extract_detail_list(soup: BeautifulSoup, label: str) -> list[str]:
             ]
             return [t for t in texts if t]
     return []
+
+
+def _extract_hero_image(soup: BeautifulSoup) -> str:
+    """URL of the illustration at the top of the post, or '' if absent.
+
+    Preferred over og:image, which the CMS leaves empty on roughly a third
+    of posts and occasionally points at the wrong post's card.
+    """
+    img = soup.find("img", class_=re.compile(r"\bhero_blog_post_illo_img\b"))
+    return (img.get("src") or "").strip() if img else ""
 
 
 _DATE_FORMATS = ["%B %d, %Y", "%b %d, %Y"]
