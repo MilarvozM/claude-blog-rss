@@ -75,9 +75,11 @@ def render(posts: list[dict], feed_url: str | None = None) -> str:
 
         # The post's header illustration, as siblings of the text fields so
         # readers get a thumbnail without the preview text changing.
+        # group=None keeps these direct children of <item>; feedgen otherwise
+        # wraps them in <media:group>, which not every reader looks inside.
         image = post.get("image")
         if image:
-            fe.media.content({"url": image, "medium": "image"})
-            fe.media.thumbnail({"url": image})
+            fe.media.content({"url": image, "medium": "image"}, group=None)
+            fe.media.thumbnail({"url": image}, group=None)
 
     return fg.rss_str(pretty=True).decode("utf-8")

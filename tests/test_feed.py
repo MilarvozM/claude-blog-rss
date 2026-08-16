@@ -69,12 +69,14 @@ def test_feed_item_has_media_image():
     xml_str = render(_make_posts(1))
     root = ET.fromstring(xml_str)
     item = root.find("channel/item")
-    assert item.find(f".//{{{MEDIA}}}content").attrib["url"] == (
+    # Direct children of <item>, not wrapped in <media:group>
+    assert item.find(f"{{{MEDIA}}}content").attrib["url"] == (
         "https://cdn.example/0-1000x1000.svg"
     )
-    assert item.find(f".//{{{MEDIA}}}thumbnail").attrib["url"] == (
+    assert item.find(f"{{{MEDIA}}}thumbnail").attrib["url"] == (
         "https://cdn.example/0-1000x1000.svg"
     )
+    assert item.find(f"{{{MEDIA}}}group") is None
 
 
 def test_feed_item_without_image_key_emits_no_media():
@@ -84,8 +86,8 @@ def test_feed_item_without_image_key_emits_no_media():
     xml_str = render(posts)
     root = ET.fromstring(xml_str)
     item = root.find("channel/item")
-    assert item.find(f".//{{{MEDIA}}}content") is None
-    assert item.find(f".//{{{MEDIA}}}thumbnail") is None
+    assert item.find(f"{{{MEDIA}}}content") is None
+    assert item.find(f"{{{MEDIA}}}thumbnail") is None
 
 
 def test_feed_preview_text_is_tags_only():
