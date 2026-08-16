@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+<rss xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
   <channel>
     <title>Claude Blog (unofficial, headlines only)</title>
     <link>https://MilarvozM.github.io/claude-blog-rss/rss.xml</link>
@@ -8,7 +8,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 16 Aug 2026 07:50:57 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 16 Aug 2026 08:40:23 +0000</lastBuildDate>
     <item>
       <title>Maximizing the value of your Claude Code sessions</title>
       <link>https://claude.com/blog/maximizing-the-value-of-your-claude-code-sessions</link>
