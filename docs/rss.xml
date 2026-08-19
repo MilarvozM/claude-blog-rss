@@ -8,7 +8,31 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 18 Aug 2026 06:46:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 19 Aug 2026 06:46:50 +0000</lastBuildDate>
+    <item>
+      <title>The Claude Science product guide</title>
+      <link>https://claude.com/blog/the-claude-science-product-guide</link>
+      <description>Tags: Enterprise AI</description>
+      <content:encoded>&lt;p&gt;Tags: Enterprise AI&lt;/p&gt;</content:encoded>
+      <guid isPermaLink="false">https://claude.com/blog/the-claude-science-product-guide</guid>
+      <category>Enterprise AI</category>
+      <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
+      <media:content url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/692f7365ae69f4d9f4f96fa2_Object-DoubleHelix.svg" medium="image"/>
+      <media:thumbnail url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/692f7365ae69f4d9f4f96fa2_Object-DoubleHelix.svg"/>
+    </item>
+    <item>
+      <title>Claude on call: How Claude Tag serves as Anthropic’s first responder for CI/CD failures</title>
+      <link>https://claude.com/blog/ai-ci-cd-on-call</link>
+      <description>Tags: Enterprise AI, Agents, Claude Code</description>
+      <content:encoded>&lt;p&gt;Tags: Enterprise AI, Agents, Claude Code&lt;/p&gt;</content:encoded>
+      <guid isPermaLink="false">https://claude.com/blog/ai-ci-cd-on-call</guid>
+      <category>Enterprise AI</category>
+      <category>Agents</category>
+      <category>Claude Code</category>
+      <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
+      <media:content url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d22a7bb714a55b503cd7_cad034e66b44f7f017c0cb931c403a97d1763758-1000x1000.svg" medium="image"/>
+      <media:thumbnail url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d22a7bb714a55b503cd7_cad034e66b44f7f017c0cb931c403a97d1763758-1000x1000.svg"/>
+    </item>
     <item>
       <title>How ABC Legal turned every employee into a builder with Claude Managed Agents</title>
       <link>https://claude.com/blog/how-abc-legal-turned-every-employee-into-a-builder-with-claude-managed-agents</link>
@@ -213,28 +237,6 @@
       <pubDate>Fri, 24 Jul 2026 00:00:00 +0000</pubDate>
       <media:content url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d224f466b800c4a5a016_a7b8978859371a024139418f3366bb0600ee1675-1000x1000.svg" medium="image"/>
       <media:thumbnail url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d224f466b800c4a5a016_a7b8978859371a024139418f3366bb0600ee1675-1000x1000.svg"/>
-    </item>
-    <item>
-      <title>Think through hard problems in voice mode</title>
-      <link>https://claude.com/blog/think-through-hard-problems-in-voice-mode</link>
-      <description>Tags: Product announcements</description>
-      <content:encoded>&lt;p&gt;Tags: Product announcements&lt;/p&gt;</content:encoded>
-      <guid isPermaLink="false">https://claude.com/blog/think-through-hard-problems-in-voice-mode</guid>
-      <category>Product announcements</category>
-      <pubDate>Thu, 23 Jul 2026 00:00:00 +0000</pubDate>
-      <media:content url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d231b45c2193efbb0f02_1869137c9d7f2a38b50e804d707e10e85de05ddb-1000x1000.svg" medium="image"/>
-      <media:thumbnail url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d231b45c2193efbb0f02_1869137c9d7f2a38b50e804d707e10e85de05ddb-1000x1000.svg"/>
-    </item>
-    <item>
-      <title>Four role-based certifications for the people who put Claude to work for customers</title>
-      <link>https://claude.com/blog/four-role-based-claude-certifications</link>
-      <description>Tags: Enterprise AI</description>
-      <content:encoded>&lt;p&gt;Tags: Enterprise AI&lt;/p&gt;</content:encoded>
-      <guid isPermaLink="false">https://claude.com/blog/four-role-based-claude-certifications</guid>
-      <category>Enterprise AI</category>
-      <pubDate>Thu, 23 Jul 2026 00:00:00 +0000</pubDate>
-      <media:content url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d22d6ec42bcf1c632f75_52f59749d1e033ff2675c6686a07bcce83fb5046-1000x1000.svg" medium="image"/>
-      <media:thumbnail url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d22d6ec42bcf1c632f75_52f59749d1e033ff2675c6686a07bcce83fb5046-1000x1000.svg"/>
     </item>
   </channel>
 </rss>
