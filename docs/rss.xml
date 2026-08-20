@@ -8,7 +8,18 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 19 Aug 2026 06:46:50 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 20 Aug 2026 06:49:31 +0000</lastBuildDate>
+    <item>
+      <title>Turning conversation into knowledge: how Slack builds human-agent teams</title>
+      <link>https://claude.com/blog/turning-conversation-into-knowledge-how-slack-builds-human-agent-teams</link>
+      <description>Tags: Enterprise AI</description>
+      <content:encoded>&lt;p&gt;Tags: Enterprise AI&lt;/p&gt;</content:encoded>
+      <guid isPermaLink="false">https://claude.com/blog/turning-conversation-into-knowledge-how-slack-builds-human-agent-teams</guid>
+      <category>Enterprise AI</category>
+      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
+      <media:content url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d22b1ef956a6d81cfd9c_653e7474811cf768b6b0f628e253f98c60e2747e-1000x1000.svg" medium="image"/>
+      <media:thumbnail url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d22b1ef956a6d81cfd9c_653e7474811cf768b6b0f628e253f98c60e2747e-1000x1000.svg"/>
+    </item>
     <item>
       <title>The Claude Science product guide</title>
       <link>https://claude.com/blog/the-claude-science-product-guide</link>
@@ -201,19 +212,6 @@
       <pubDate>Tue, 28 Jul 2026 00:00:00 +0000</pubDate>
       <media:content url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d229b7f170bab528846d_0df729ce74e4c9dd62c3342c9549ce6c7cef1202-1000x1000.svg" medium="image"/>
       <media:thumbnail url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d229b7f170bab528846d_0df729ce74e4c9dd62c3342c9549ce6c7cef1202-1000x1000.svg"/>
-    </item>
-    <item>
-      <title>Claude models explained: choosing the best model for your use case</title>
-      <link>https://claude.com/blog/claude-models-explained-choosing-the-best-model-for-your-use-case</link>
-      <description>Tags: Enterprise AI, Agents, Claude Code</description>
-      <content:encoded>&lt;p&gt;Tags: Enterprise AI, Agents, Claude Code&lt;/p&gt;</content:encoded>
-      <guid isPermaLink="false">https://claude.com/blog/claude-models-explained-choosing-the-best-model-for-your-use-case</guid>
-      <category>Enterprise AI</category>
-      <category>Agents</category>
-      <category>Claude Code</category>
-      <pubDate>Fri, 24 Jul 2026 00:00:00 +0000</pubDate>
-      <media:content url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d225e31f7aa22c1f28cb_46e4aa7ea208ed440d5bd9e9e3a0ee66bc336ff1-1000x1000.svg" medium="image"/>
-      <media:thumbnail url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d225e31f7aa22c1f28cb_46e4aa7ea208ed440d5bd9e9e3a0ee66bc336ff1-1000x1000.svg"/>
     </item>
     <item>
       <title>The new rules of context engineering for Claude 5 generation models</title>
