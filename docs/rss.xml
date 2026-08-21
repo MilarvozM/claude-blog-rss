@@ -8,7 +8,54 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 20 Aug 2026 06:49:31 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 21 Aug 2026 06:50:48 +0000</lastBuildDate>
+    <item>
+      <title>Build production agents with computer use, the Skills API, and the Files API</title>
+      <link>https://claude.com/blog/computer-use-skills-api-files-api</link>
+      <description>Tags: Product announcements, Agents, Enterprise AI</description>
+      <content:encoded>&lt;p&gt;Tags: Product announcements, Agents, Enterprise AI&lt;/p&gt;</content:encoded>
+      <guid isPermaLink="false">https://claude.com/blog/computer-use-skills-api-files-api</guid>
+      <category>Product announcements</category>
+      <category>Agents</category>
+      <category>Enterprise AI</category>
+      <pubDate>Thu, 20 Aug 2026 00:00:00 +0000</pubDate>
+      <media:content url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d229061abf091318fc81_6905c83d0735e1bc430025fdd1748d1406079036-1000x1000.svg" medium="image"/>
+      <media:thumbnail url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d229061abf091318fc81_6905c83d0735e1bc430025fdd1748d1406079036-1000x1000.svg"/>
+    </item>
+    <item>
+      <title>The Claude Code guide for startups</title>
+      <link>https://claude.com/blog/claude-code-guide-for-startups</link>
+      <description>Tags: Claude Code</description>
+      <content:encoded>&lt;p&gt;Tags: Claude Code&lt;/p&gt;</content:encoded>
+      <guid isPermaLink="false">https://claude.com/blog/claude-code-guide-for-startups</guid>
+      <category>Claude Code</category>
+      <pubDate>Thu, 20 Aug 2026 00:00:00 +0000</pubDate>
+      <media:content url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d222061abf091318fb82_423062049d4676b41d52b16068cbb5e21603190e-1000x1000.svg" medium="image"/>
+      <media:thumbnail url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d222061abf091318fb82_423062049d4676b41d52b16068cbb5e21603190e-1000x1000.svg"/>
+    </item>
+    <item>
+      <title>How monday.com transformed its platform into an agent-first product where humans and agents collaborate</title>
+      <link>https://claude.com/blog/how-monday-com-transformed-its-platform-into-an-agent-first-product-where-humans-and-agents-collaborate</link>
+      <description>Tags: Agents</description>
+      <content:encoded>&lt;p&gt;Tags: Agents&lt;/p&gt;</content:encoded>
+      <guid isPermaLink="false">https://claude.com/blog/how-monday-com-transformed-its-platform-into-an-agent-first-product-where-humans-and-agents-collaborate</guid>
+      <category>Agents</category>
+      <pubDate>Thu, 20 Aug 2026 00:00:00 +0000</pubDate>
+      <media:content url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/692f76874e94e489958af8ba_Object-CodeMagnifier.svg" medium="image"/>
+      <media:thumbnail url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/692f76874e94e489958af8ba_Object-CodeMagnifier.svg"/>
+    </item>
+    <item>
+      <title>Anthropic’s approach to teaching and learning AI</title>
+      <link>https://claude.com/blog/anthropics-approach-to-teaching-and-learning-ai</link>
+      <description>Tags: Product announcements, Enterprise AI</description>
+      <content:encoded>&lt;p&gt;Tags: Product announcements, Enterprise AI&lt;/p&gt;</content:encoded>
+      <guid isPermaLink="false">https://claude.com/blog/anthropics-approach-to-teaching-and-learning-ai</guid>
+      <category>Product announcements</category>
+      <category>Enterprise AI</category>
+      <pubDate>Thu, 20 Aug 2026 00:00:00 +0000</pubDate>
+      <media:content url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d223de65e7dcca8267d8_ea364001be6bf6d2e86b58109ead6a779d5771a7-1000x1000.svg" medium="image"/>
+      <media:thumbnail url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d223de65e7dcca8267d8_ea364001be6bf6d2e86b58109ead6a779d5771a7-1000x1000.svg"/>
+    </item>
     <item>
       <title>Turning conversation into knowledge: how Slack builds human-agent teams</title>
       <link>https://claude.com/blog/turning-conversation-into-knowledge-how-slack-builds-human-agent-teams</link>
@@ -190,51 +237,6 @@
       <pubDate>Wed, 05 Aug 2026 00:00:00 +0000</pubDate>
       <media:content url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d22753311132c8c37b39_d3dd09ad16c68461dc3fb01df5e84cf7ccafda6c-1000x1000.svg" medium="image"/>
       <media:thumbnail url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d22753311132c8c37b39_d3dd09ad16c68461dc3fb01df5e84cf7ccafda6c-1000x1000.svg"/>
-    </item>
-    <item>
-      <title>A guide to cost visibility and control in Claude</title>
-      <link>https://claude.com/blog/a-guide-to-cost-visibility-and-control-in-claude</link>
-      <description>Tags: Enterprise AI</description>
-      <content:encoded>&lt;p&gt;Tags: Enterprise AI&lt;/p&gt;</content:encoded>
-      <guid isPermaLink="false">https://claude.com/blog/a-guide-to-cost-visibility-and-control-in-claude</guid>
-      <category>Enterprise AI</category>
-      <pubDate>Tue, 04 Aug 2026 00:00:00 +0000</pubDate>
-      <media:content url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d2279047e82efc257633_6c7219042e95bfef1a126ad5ee8b2c7def8b8b0a-1000x1000.svg" medium="image"/>
-      <media:thumbnail url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d2279047e82efc257633_6c7219042e95bfef1a126ad5ee8b2c7def8b8b0a-1000x1000.svg"/>
-    </item>
-    <item>
-      <title>Bringing MCP 2026-07-28 to Claude</title>
-      <link>https://claude.com/blog/bringing-mcp-2026-07-28-to-claude</link>
-      <description>Tags: Product announcements</description>
-      <content:encoded>&lt;p&gt;Tags: Product announcements&lt;/p&gt;</content:encoded>
-      <guid isPermaLink="false">https://claude.com/blog/bringing-mcp-2026-07-28-to-claude</guid>
-      <category>Product announcements</category>
-      <pubDate>Tue, 28 Jul 2026 00:00:00 +0000</pubDate>
-      <media:content url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d229b7f170bab528846d_0df729ce74e4c9dd62c3342c9549ce6c7cef1202-1000x1000.svg" medium="image"/>
-      <media:thumbnail url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d229b7f170bab528846d_0df729ce74e4c9dd62c3342c9549ce6c7cef1202-1000x1000.svg"/>
-    </item>
-    <item>
-      <title>The new rules of context engineering for Claude 5 generation models</title>
-      <link>https://claude.com/blog/the-new-rules-of-context-engineering-for-claude-5-generation-models</link>
-      <description>Tags: Claude Code, Agents</description>
-      <content:encoded>&lt;p&gt;Tags: Claude Code, Agents&lt;/p&gt;</content:encoded>
-      <guid isPermaLink="false">https://claude.com/blog/the-new-rules-of-context-engineering-for-claude-5-generation-models</guid>
-      <category>Claude Code</category>
-      <category>Agents</category>
-      <pubDate>Fri, 24 Jul 2026 00:00:00 +0000</pubDate>
-      <media:content url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d222061abf091318fb82_423062049d4676b41d52b16068cbb5e21603190e-1000x1000.svg" medium="image"/>
-      <media:thumbnail url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d222061abf091318fb82_423062049d4676b41d52b16068cbb5e21603190e-1000x1000.svg"/>
-    </item>
-    <item>
-      <title>How the product designer who built Claude Design uses it to explore ideas before building them</title>
-      <link>https://claude.com/blog/how-the-product-designer-who-built-claude-design-uses-it-to-explore-ideas-before-building-them</link>
-      <description>Tags: Enterprise AI</description>
-      <content:encoded>&lt;p&gt;Tags: Enterprise AI&lt;/p&gt;</content:encoded>
-      <guid isPermaLink="false">https://claude.com/blog/how-the-product-designer-who-built-claude-design-uses-it-to-explore-ideas-before-building-them</guid>
-      <category>Enterprise AI</category>
-      <pubDate>Fri, 24 Jul 2026 00:00:00 +0000</pubDate>
-      <media:content url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d224f466b800c4a5a016_a7b8978859371a024139418f3366bb0600ee1675-1000x1000.svg" medium="image"/>
-      <media:thumbnail url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d224f466b800c4a5a016_a7b8978859371a024139418f3366bb0600ee1675-1000x1000.svg"/>
     </item>
   </channel>
 </rss>
