@@ -8,7 +8,30 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 21 Aug 2026 06:50:48 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 22 Aug 2026 06:41:55 +0000</lastBuildDate>
+    <item>
+      <title>The AI-Native SDLC playbook</title>
+      <link>https://claude.com/blog/the-ai-native-sdlc-playbook</link>
+      <description>Tags: Enterprise AI, Claude Code</description>
+      <content:encoded>&lt;p&gt;Tags: Enterprise AI, Claude Code&lt;/p&gt;</content:encoded>
+      <guid isPermaLink="false">https://claude.com/blog/the-ai-native-sdlc-playbook</guid>
+      <category>Enterprise AI</category>
+      <category>Claude Code</category>
+      <pubDate>Fri, 21 Aug 2026 00:00:00 +0000</pubDate>
+      <media:content url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d222061abf091318fb82_423062049d4676b41d52b16068cbb5e21603190e-1000x1000.svg" medium="image"/>
+      <media:thumbnail url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d222061abf091318fb82_423062049d4676b41d52b16068cbb5e21603190e-1000x1000.svg"/>
+    </item>
+    <item>
+      <title>Bringing the cybersecurity capabilities of Claude Mythos 5 to more defenders</title>
+      <link>https://claude.com/blog/bringing-claude-mythos-5-to-more-defenders</link>
+      <description>Tags: Product announcements</description>
+      <content:encoded>&lt;p&gt;Tags: Product announcements&lt;/p&gt;</content:encoded>
+      <guid isPermaLink="false">https://claude.com/blog/bringing-claude-mythos-5-to-more-defenders</guid>
+      <category>Product announcements</category>
+      <pubDate>Fri, 21 Aug 2026 00:00:00 +0000</pubDate>
+      <media:content url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d2308749b4e883cc44b7_e029027e0b3beeb5b629bd4a26143597e7775b38-1000x1000.svg" medium="image"/>
+      <media:thumbnail url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d2308749b4e883cc44b7_e029027e0b3beeb5b629bd4a26143597e7775b38-1000x1000.svg"/>
+    </item>
     <item>
       <title>Build production agents with computer use, the Skills API, and the Files API</title>
       <link>https://claude.com/blog/computer-use-skills-api-files-api</link>
@@ -203,17 +226,6 @@
       <media:thumbnail url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d225588ad176f7c4aafd_abc884c723daea810d2e986455358281a2f94102-1000x1000.svg"/>
     </item>
     <item>
-      <title>Run Claude Code sessions on your own compute</title>
-      <link>https://claude.com/blog/run-claude-code-sessions-on-your-own-compute</link>
-      <description>Tags: Product announcements</description>
-      <content:encoded>&lt;p&gt;Tags: Product announcements&lt;/p&gt;</content:encoded>
-      <guid isPermaLink="false">https://claude.com/blog/run-claude-code-sessions-on-your-own-compute</guid>
-      <category>Product announcements</category>
-      <pubDate>Thu, 06 Aug 2026 00:00:00 +0000</pubDate>
-      <media:content url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d22651dd05046d0fdb0b_39c40393e610cc0a5e65f50ad12ff5ada273f792-1000x1000.svg" medium="image"/>
-      <media:thumbnail url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d22651dd05046d0fdb0b_39c40393e610cc0a5e65f50ad12ff5ada273f792-1000x1000.svg"/>
-    </item>
-    <item>
       <title>Millennium and Anthropic are building a digital risk analyst with Claude</title>
       <link>https://claude.com/blog/millennium-and-anthropic-are-building-a-digital-risk-analyst-with-claude</link>
       <description>Tags: Enterprise AI, Agents, Claude Code</description>
@@ -225,18 +237,6 @@
       <pubDate>Thu, 06 Aug 2026 00:00:00 +0000</pubDate>
       <media:content url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d223e0a787df988a824b_39db33950eb113e504a5b9fc56db490a64673e96-1000x1000.svg" medium="image"/>
       <media:thumbnail url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d223e0a787df988a824b_39db33950eb113e504a5b9fc56db490a64673e96-1000x1000.svg"/>
-    </item>
-    <item>
-      <title>Inference hooks: inline data loss prevention for Claude Enterprise</title>
-      <link>https://claude.com/blog/claude-enterprise-inference-hooks</link>
-      <description>Tags: Enterprise AI, Product announcements</description>
-      <content:encoded>&lt;p&gt;Tags: Enterprise AI, Product announcements&lt;/p&gt;</content:encoded>
-      <guid isPermaLink="false">https://claude.com/blog/claude-enterprise-inference-hooks</guid>
-      <category>Enterprise AI</category>
-      <category>Product announcements</category>
-      <pubDate>Wed, 05 Aug 2026 00:00:00 +0000</pubDate>
-      <media:content url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d22753311132c8c37b39_d3dd09ad16c68461dc3fb01df5e84cf7ccafda6c-1000x1000.svg" medium="image"/>
-      <media:thumbnail url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d22753311132c8c37b39_d3dd09ad16c68461dc3fb01df5e84cf7ccafda6c-1000x1000.svg"/>
     </item>
   </channel>
 </rss>
