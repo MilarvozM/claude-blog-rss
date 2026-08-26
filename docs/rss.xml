@@ -8,7 +8,29 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 25 Aug 2026 06:51:02 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 26 Aug 2026 06:52:29 +0000</lastBuildDate>
+    <item>
+      <title>Claude's memory works everywhere, and you decide what's in it</title>
+      <link>https://claude.com/blog/claudes-memory-works-everywhere-and-you-decide-whats-in-it</link>
+      <description>Tags: Product announcements</description>
+      <content:encoded>&lt;p&gt;Tags: Product announcements&lt;/p&gt;</content:encoded>
+      <guid isPermaLink="false">https://claude.com/blog/claudes-memory-works-everywhere-and-you-decide-whats-in-it</guid>
+      <category>Product announcements</category>
+      <pubDate>Tue, 25 Aug 2026 00:00:00 +0000</pubDate>
+      <media:content url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d22562f020146c9ec973_f8f4644253bde2f901550431b871b6dcf91e5d9d-1000x1000.svg" medium="image"/>
+      <media:thumbnail url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d22562f020146c9ec973_f8f4644253bde2f901550431b871b6dcf91e5d9d-1000x1000.svg"/>
+    </item>
+    <item>
+      <title>Bain &amp; Company joins the Claude Partner Network as a Global Premier partner</title>
+      <link>https://claude.com/blog/bain-company-joins-the-claude-partner-network-as-a-global-premier-partner</link>
+      <description>Tags: Enterprise AI</description>
+      <content:encoded>&lt;p&gt;Tags: Enterprise AI&lt;/p&gt;</content:encoded>
+      <guid isPermaLink="false">https://claude.com/blog/bain-company-joins-the-claude-partner-network-as-a-global-premier-partner</guid>
+      <category>Enterprise AI</category>
+      <pubDate>Tue, 25 Aug 2026 00:00:00 +0000</pubDate>
+      <media:content url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d22727482c9ba6a02e71_1576ae23eaf481f33bd36ab468171cc69d12361a-1000x1000.svg" medium="image"/>
+      <media:thumbnail url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d22727482c9ba6a02e71_1576ae23eaf481f33bd36ab468171cc69d12361a-1000x1000.svg"/>
+    </item>
     <item>
       <title>How an Anthropic field marketer uses Claude Code to send weekly personalized updates to every sales rep</title>
       <link>https://claude.com/blog/how-an-anthropic-field-marketer-uses-claude-code-to-send-weekly-personalized-updates-to-every-sales-rep</link>
@@ -202,28 +224,6 @@
       <pubDate>Tue, 11 Aug 2026 00:00:00 +0000</pubDate>
       <media:content url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d2308749b4e883cc44b7_e029027e0b3beeb5b629bd4a26143597e7775b38-1000x1000.svg" medium="image"/>
       <media:thumbnail url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d2308749b4e883cc44b7_e029027e0b3beeb5b629bd4a26143597e7775b38-1000x1000.svg"/>
-    </item>
-    <item>
-      <title>Running auto mode in production</title>
-      <link>https://claude.com/blog/auto-mode-in-production</link>
-      <description>Tags: Claude Code</description>
-      <content:encoded>&lt;p&gt;Tags: Claude Code&lt;/p&gt;</content:encoded>
-      <guid isPermaLink="false">https://claude.com/blog/auto-mode-in-production</guid>
-      <category>Claude Code</category>
-      <pubDate>Fri, 07 Aug 2026 00:00:00 +0000</pubDate>
-      <media:content url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d22b1ef956a6d81cfd9c_653e7474811cf768b6b0f628e253f98c60e2747e-1000x1000.svg" medium="image"/>
-      <media:thumbnail url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d22b1ef956a6d81cfd9c_653e7474811cf768b6b0f628e253f98c60e2747e-1000x1000.svg"/>
-    </item>
-    <item>
-      <title>Auto mode is now the default in Claude Code for Pro, Max, and Team plans</title>
-      <link>https://claude.com/blog/auto-mode-default-in-claude-code</link>
-      <description>Tags: Claude Code</description>
-      <content:encoded>&lt;p&gt;Tags: Claude Code&lt;/p&gt;</content:encoded>
-      <guid isPermaLink="false">https://claude.com/blog/auto-mode-default-in-claude-code</guid>
-      <category>Claude Code</category>
-      <pubDate>Fri, 07 Aug 2026 00:00:00 +0000</pubDate>
-      <media:content url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/690937bee860a953417a8eee_Object-CodeBrowserGlobe.svg" medium="image"/>
-      <media:thumbnail url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/690937bee860a953417a8eee_Object-CodeBrowserGlobe.svg"/>
     </item>
     <item>
       <title>How Anthropic's business development team uses Claude to run inbound and outbound at scale</title>
