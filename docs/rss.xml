@@ -8,7 +8,18 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 28 Aug 2026 18:19:02 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 29 Aug 2026 12:27:41 +0000</lastBuildDate>
+    <item>
+      <title>How Anthropic employees use Claude Tag</title>
+      <link>https://claude.com/blog/how-anthropic-employees-use-claude-tag</link>
+      <description>Tags: Enterprise AI</description>
+      <content:encoded>&lt;p&gt;Tags: Enterprise AI&lt;/p&gt;</content:encoded>
+      <guid isPermaLink="false">https://claude.com/blog/how-anthropic-employees-use-claude-tag</guid>
+      <category>Enterprise AI</category>
+      <pubDate>Fri, 28 Aug 2026 00:00:00 +0000</pubDate>
+      <media:content url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/692f783c784823d48ad84175_Object-CodeChatText.svg" medium="image"/>
+      <media:thumbnail url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/692f783c784823d48ad84175_Object-CodeChatText.svg"/>
+    </item>
     <item>
       <title>Claude for Teachers, now available for schools and districts</title>
       <link>https://claude.com/blog/claude-for-teachers-now-available-for-schools-and-districts</link>
@@ -213,17 +224,6 @@
       <pubDate>Fri, 14 Aug 2026 00:00:00 +0000</pubDate>
       <media:content url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d22f63175f636cba4641_c0af2a56f56cf298ce5904f2901e9a36facd0dbe-1000x1000.svg" medium="image"/>
       <media:thumbnail url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d22f63175f636cba4641_c0af2a56f56cf298ce5904f2901e9a36facd0dbe-1000x1000.svg"/>
-    </item>
-    <item>
-      <title>Claude Tag now reads even more of the room</title>
-      <link>https://claude.com/blog/claude-tag-now-reads-even-more-of-the-room</link>
-      <description>Tags: Product announcements</description>
-      <content:encoded>&lt;p&gt;Tags: Product announcements&lt;/p&gt;</content:encoded>
-      <guid isPermaLink="false">https://claude.com/blog/claude-tag-now-reads-even-more-of-the-room</guid>
-      <category>Product announcements</category>
-      <pubDate>Thu, 13 Aug 2026 00:00:00 +0000</pubDate>
-      <media:content url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d2260bfc90348429f9c3_cd9cf56a7f049285b7c1c8786c0a600cf3d7f317-1000x1000.svg" medium="image"/>
-      <media:thumbnail url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d2260bfc90348429f9c3_cd9cf56a7f049285b7c1c8786c0a600cf3d7f317-1000x1000.svg"/>
     </item>
     <item>
       <title>Self-service data analytics in Slack: how Anthropic deploys Claude Tag for ad-hoc questions</title>
