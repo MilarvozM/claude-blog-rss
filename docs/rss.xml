@@ -8,7 +8,18 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 08 Sep 2026 10:49:03 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 09 Sep 2026 10:55:08 +0000</lastBuildDate>
+    <item>
+      <title>Reducing cost and improving performance with Claude Platform</title>
+      <link>https://claude.com/blog/reducing-cost-and-improving-performance-with-claude-platform</link>
+      <description>Tags: Agents</description>
+      <content:encoded>&lt;p&gt;Tags: Agents&lt;/p&gt;</content:encoded>
+      <guid isPermaLink="false">https://claude.com/blog/reducing-cost-and-improving-performance-with-claude-platform</guid>
+      <category>Agents</category>
+      <pubDate>Tue, 08 Sep 2026 00:00:00 +0000</pubDate>
+      <media:content url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6a0112e18cdd7f0b92d19e40_Hand-BuildingBricks.svg" medium="image"/>
+      <media:thumbnail url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6a0112e18cdd7f0b92d19e40_Hand-BuildingBricks.svg"/>
+    </item>
     <item>
       <title>Building commerce agents with Claude</title>
       <link>https://claude.com/blog/claude-for-commerce-agents</link>
@@ -224,17 +235,6 @@
       <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
       <media:content url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d22a7bb714a55b503cd7_cad034e66b44f7f017c0cb931c403a97d1763758-1000x1000.svg" medium="image"/>
       <media:thumbnail url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d22a7bb714a55b503cd7_cad034e66b44f7f017c0cb931c403a97d1763758-1000x1000.svg"/>
-    </item>
-    <item>
-      <title>How ABC Legal turned every employee into a builder with Claude Managed Agents</title>
-      <link>https://claude.com/blog/how-abc-legal-turned-every-employee-into-a-builder-with-claude-managed-agents</link>
-      <description>Tags: Enterprise AI</description>
-      <content:encoded>&lt;p&gt;Tags: Enterprise AI&lt;/p&gt;</content:encoded>
-      <guid isPermaLink="false">https://claude.com/blog/how-abc-legal-turned-every-employee-into-a-builder-with-claude-managed-agents</guid>
-      <category>Enterprise AI</category>
-      <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
-      <media:content url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d22949f86cd1968deb9f_33dbe8f783d4835a838b4c4ae85d3c04e352fee1-1000x1000.svg" medium="image"/>
-      <media:thumbnail url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d22949f86cd1968deb9f_33dbe8f783d4835a838b4c4ae85d3c04e352fee1-1000x1000.svg"/>
     </item>
   </channel>
 </rss>
