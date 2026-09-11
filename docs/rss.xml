@@ -8,7 +8,28 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 10 Sep 2026 10:51:52 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 11 Sep 2026 10:48:12 +0000</lastBuildDate>
+    <item>
+      <title>What 1,000 small business owners taught us about AI</title>
+      <link>https://claude.com/blog/what-1-000-small-business-owners-taught-us-about-ai</link>
+      <description>Tags: Enterprise AI</description>
+      <content:encoded>&lt;p&gt;Tags: Enterprise AI&lt;/p&gt;</content:encoded>
+      <guid isPermaLink="false">https://claude.com/blog/what-1-000-small-business-owners-taught-us-about-ai</guid>
+      <category>Enterprise AI</category>
+      <pubDate>Thu, 10 Sep 2026 00:00:00 +0000</pubDate>
+      <media:content url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d2222403b092e0358b0e_cd4fd51deacd067d4e30aee4f4b149f6cba1b97b-1000x1000.svg" medium="image"/>
+      <media:thumbnail url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d2222403b092e0358b0e_cd4fd51deacd067d4e30aee4f4b149f6cba1b97b-1000x1000.svg"/>
+    </item>
+    <item>
+      <title>T. Rowe Price brings more of Claude to its investment process</title>
+      <link>https://claude.com/blog/t-rowe-price-brings-more-of-claude-to-its-investment-process</link>
+      <description>Tags: Uncategorized</description>
+      <content:encoded>&lt;p&gt;Tags: Uncategorized&lt;/p&gt;</content:encoded>
+      <guid isPermaLink="false">https://claude.com/blog/t-rowe-price-brings-more-of-claude-to-its-investment-process</guid>
+      <pubDate>Thu, 10 Sep 2026 00:00:00 +0000</pubDate>
+      <media:content url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d22252eca371ddd7020f_60d57c0d0bf031e140de678692f7c3ef2d885ce3-1000x1000.svg" medium="image"/>
+      <media:thumbnail url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d22252eca371ddd7020f_60d57c0d0bf031e140de678692f7c3ef2d885ce3-1000x1000.svg"/>
+    </item>
     <item>
       <title>Reducing cost and improving performance with Claude Platform</title>
       <link>https://claude.com/blog/reducing-cost-and-improving-performance-with-claude-platform</link>
@@ -211,30 +232,6 @@
       <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
       <media:content url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d22b1ef956a6d81cfd9c_653e7474811cf768b6b0f628e253f98c60e2747e-1000x1000.svg" medium="image"/>
       <media:thumbnail url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d22b1ef956a6d81cfd9c_653e7474811cf768b6b0f628e253f98c60e2747e-1000x1000.svg"/>
-    </item>
-    <item>
-      <title>The Claude Science product guide</title>
-      <link>https://claude.com/blog/the-claude-science-product-guide</link>
-      <description>Tags: Enterprise AI</description>
-      <content:encoded>&lt;p&gt;Tags: Enterprise AI&lt;/p&gt;</content:encoded>
-      <guid isPermaLink="false">https://claude.com/blog/the-claude-science-product-guide</guid>
-      <category>Enterprise AI</category>
-      <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
-      <media:content url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/692f7365ae69f4d9f4f96fa2_Object-DoubleHelix.svg" medium="image"/>
-      <media:thumbnail url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/692f7365ae69f4d9f4f96fa2_Object-DoubleHelix.svg"/>
-    </item>
-    <item>
-      <title>Claude on call: How Claude Tag serves as Anthropic’s first responder for CI/CD failures</title>
-      <link>https://claude.com/blog/ai-ci-cd-on-call</link>
-      <description>Tags: Enterprise AI, Agents, Claude Code</description>
-      <content:encoded>&lt;p&gt;Tags: Enterprise AI, Agents, Claude Code&lt;/p&gt;</content:encoded>
-      <guid isPermaLink="false">https://claude.com/blog/ai-ci-cd-on-call</guid>
-      <category>Enterprise AI</category>
-      <category>Agents</category>
-      <category>Claude Code</category>
-      <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
-      <media:content url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d22a7bb714a55b503cd7_cad034e66b44f7f017c0cb931c403a97d1763758-1000x1000.svg" medium="image"/>
-      <media:thumbnail url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d22a7bb714a55b503cd7_cad034e66b44f7f017c0cb931c403a97d1763758-1000x1000.svg"/>
     </item>
   </channel>
 </rss>
