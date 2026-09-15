@@ -8,7 +8,52 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 14 Sep 2026 12:07:18 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 15 Sep 2026 11:19:13 +0000</lastBuildDate>
+    <item>
+      <title>Deploying AI from pilot to production</title>
+      <link>https://claude.com/blog/deploying-ai-from-pilot-to-production</link>
+      <description>Tags: Enterprise AI</description>
+      <content:encoded>&lt;p&gt;Tags: Enterprise AI&lt;/p&gt;</content:encoded>
+      <guid isPermaLink="false">https://claude.com/blog/deploying-ai-from-pilot-to-production</guid>
+      <category>Enterprise AI</category>
+      <pubDate>Mon, 14 Sep 2026 00:00:00 +0000</pubDate>
+      <media:content url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d224d39f9b8e905d1823_b68cbb43d7c8f56f0b14cc867e8d4d74445f78b0-1000x1000.svg" medium="image"/>
+      <media:thumbnail url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d224d39f9b8e905d1823_b68cbb43d7c8f56f0b14cc867e8d4d74445f78b0-1000x1000.svg"/>
+    </item>
+    <item>
+      <title>How healthcare organizations use Claude Tag</title>
+      <link>https://claude.com/blog/how-healthcare-organizations-use-claude-tag</link>
+      <description>Tags: Enterprise AI</description>
+      <content:encoded>&lt;p&gt;Tags: Enterprise AI&lt;/p&gt;</content:encoded>
+      <guid isPermaLink="false">https://claude.com/blog/how-healthcare-organizations-use-claude-tag</guid>
+      <category>Enterprise AI</category>
+      <pubDate>Mon, 14 Sep 2026 00:00:00 +0000</pubDate>
+      <media:content url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d22deea97e4a5b5e5739_8d339ae8ecedecc1409db8f5bbb99c958db56946-1000x1000.svg" medium="image"/>
+      <media:thumbnail url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d22deea97e4a5b5e5739_8d339ae8ecedecc1409db8f5bbb99c958db56946-1000x1000.svg"/>
+    </item>
+    <item>
+      <title>Claude for Financial Advisors</title>
+      <link>https://claude.com/blog/claude-for-financial-advisors</link>
+      <description>Tags: Product announcements</description>
+      <content:encoded>&lt;p&gt;Tags: Product announcements&lt;/p&gt;</content:encoded>
+      <guid isPermaLink="false">https://claude.com/blog/claude-for-financial-advisors</guid>
+      <category>Product announcements</category>
+      <pubDate>Mon, 14 Sep 2026 00:00:00 +0000</pubDate>
+      <media:content url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d2319ef2161fcf9ba649_ddad92700787ec1bf1d80359c0c5e6ca305682b0-1000x1000.svg" medium="image"/>
+      <media:thumbnail url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d2319ef2161fcf9ba649_ddad92700787ec1bf1d80359c0c5e6ca305682b0-1000x1000.svg"/>
+    </item>
+    <item>
+      <title>Agentic coding is straining CI. Here’s how we scaled test impact analysis at Anthropic</title>
+      <link>https://claude.com/blog/agentic-coding-is-straining-ci-heres-how-we-scaled-test-impact-analysis-at-anthropic</link>
+      <description>Tags: Claude Code, Enterprise AI</description>
+      <content:encoded>&lt;p&gt;Tags: Claude Code, Enterprise AI&lt;/p&gt;</content:encoded>
+      <guid isPermaLink="false">https://claude.com/blog/agentic-coding-is-straining-ci-heres-how-we-scaled-test-impact-analysis-at-anthropic</guid>
+      <category>Claude Code</category>
+      <category>Enterprise AI</category>
+      <pubDate>Mon, 14 Sep 2026 00:00:00 +0000</pubDate>
+      <media:content url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d228e9c51800dde13958_6507d83d1197bb8630131d363fb8bea838d79ca7-1000x1000.svg" medium="image"/>
+      <media:thumbnail url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d228e9c51800dde13958_6507d83d1197bb8630131d363fb8bea838d79ca7-1000x1000.svg"/>
+    </item>
     <item>
       <title>What 1,000 small business owners taught us about AI</title>
       <link>https://claude.com/blog/what-1-000-small-business-owners-taught-us-about-ai</link>
@@ -176,41 +221,6 @@
       <media:thumbnail url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d2308749b4e883cc44b7_e029027e0b3beeb5b629bd4a26143597e7775b38-1000x1000.svg"/>
     </item>
     <item>
-      <title>Build production agents with computer use, the Skills API, and the Files API</title>
-      <link>https://claude.com/blog/computer-use-skills-api-files-api</link>
-      <description>Tags: Product announcements, Agents, Enterprise AI</description>
-      <content:encoded>&lt;p&gt;Tags: Product announcements, Agents, Enterprise AI&lt;/p&gt;</content:encoded>
-      <guid isPermaLink="false">https://claude.com/blog/computer-use-skills-api-files-api</guid>
-      <category>Product announcements</category>
-      <category>Agents</category>
-      <category>Enterprise AI</category>
-      <pubDate>Thu, 20 Aug 2026 00:00:00 +0000</pubDate>
-      <media:content url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d229061abf091318fc81_6905c83d0735e1bc430025fdd1748d1406079036-1000x1000.svg" medium="image"/>
-      <media:thumbnail url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d229061abf091318fc81_6905c83d0735e1bc430025fdd1748d1406079036-1000x1000.svg"/>
-    </item>
-    <item>
-      <title>The Claude Code guide for startups</title>
-      <link>https://claude.com/blog/claude-code-guide-for-startups</link>
-      <description>Tags: Claude Code</description>
-      <content:encoded>&lt;p&gt;Tags: Claude Code&lt;/p&gt;</content:encoded>
-      <guid isPermaLink="false">https://claude.com/blog/claude-code-guide-for-startups</guid>
-      <category>Claude Code</category>
-      <pubDate>Thu, 20 Aug 2026 00:00:00 +0000</pubDate>
-      <media:content url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d222061abf091318fb82_423062049d4676b41d52b16068cbb5e21603190e-1000x1000.svg" medium="image"/>
-      <media:thumbnail url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d222061abf091318fb82_423062049d4676b41d52b16068cbb5e21603190e-1000x1000.svg"/>
-    </item>
-    <item>
-      <title>How monday.com transformed its platform into an agent-first product where humans and agents collaborate</title>
-      <link>https://claude.com/blog/how-monday-com-transformed-its-platform-into-an-agent-first-product-where-humans-and-agents-collaborate</link>
-      <description>Tags: Agents</description>
-      <content:encoded>&lt;p&gt;Tags: Agents&lt;/p&gt;</content:encoded>
-      <guid isPermaLink="false">https://claude.com/blog/how-monday-com-transformed-its-platform-into-an-agent-first-product-where-humans-and-agents-collaborate</guid>
-      <category>Agents</category>
-      <pubDate>Thu, 20 Aug 2026 00:00:00 +0000</pubDate>
-      <media:content url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/692f76874e94e489958af8ba_Object-CodeMagnifier.svg" medium="image"/>
-      <media:thumbnail url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/692f76874e94e489958af8ba_Object-CodeMagnifier.svg"/>
-    </item>
-    <item>
       <title>Anthropic’s approach to teaching and learning AI</title>
       <link>https://claude.com/blog/anthropics-approach-to-teaching-and-learning-ai</link>
       <description>Tags: Product announcements, Enterprise AI</description>
@@ -221,17 +231,6 @@
       <pubDate>Thu, 20 Aug 2026 00:00:00 +0000</pubDate>
       <media:content url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d223de65e7dcca8267d8_ea364001be6bf6d2e86b58109ead6a779d5771a7-1000x1000.svg" medium="image"/>
       <media:thumbnail url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d223de65e7dcca8267d8_ea364001be6bf6d2e86b58109ead6a779d5771a7-1000x1000.svg"/>
-    </item>
-    <item>
-      <title>Turning conversation into knowledge: how Slack builds human-agent teams</title>
-      <link>https://claude.com/blog/turning-conversation-into-knowledge-how-slack-builds-human-agent-teams</link>
-      <description>Tags: Enterprise AI</description>
-      <content:encoded>&lt;p&gt;Tags: Enterprise AI&lt;/p&gt;</content:encoded>
-      <guid isPermaLink="false">https://claude.com/blog/turning-conversation-into-knowledge-how-slack-builds-human-agent-teams</guid>
-      <category>Enterprise AI</category>
-      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
-      <media:content url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d22b1ef956a6d81cfd9c_653e7474811cf768b6b0f628e253f98c60e2747e-1000x1000.svg" medium="image"/>
-      <media:thumbnail url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d22b1ef956a6d81cfd9c_653e7474811cf768b6b0f628e253f98c60e2747e-1000x1000.svg"/>
     </item>
   </channel>
 </rss>
