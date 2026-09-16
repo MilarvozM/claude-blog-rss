@@ -8,7 +8,40 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 15 Sep 2026 11:19:13 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 16 Sep 2026 11:01:39 +0000</lastBuildDate>
+    <item>
+      <title>Claude for Small Business launches new workflows, integrations, and training programs</title>
+      <link>https://claude.com/blog/claude-for-small-business-launches-new-workflows-integrations-and-training-programs</link>
+      <description>Tags: Product announcements</description>
+      <content:encoded>&lt;p&gt;Tags: Product announcements&lt;/p&gt;</content:encoded>
+      <guid isPermaLink="false">https://claude.com/blog/claude-for-small-business-launches-new-workflows-integrations-and-training-programs</guid>
+      <category>Product announcements</category>
+      <pubDate>Tue, 15 Sep 2026 00:00:00 +0000</pubDate>
+      <media:content url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6aa82dfc4ca89952d04c3873_Object-Store.svg" medium="image"/>
+      <media:thumbnail url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6aa82dfc4ca89952d04c3873_Object-Store.svg"/>
+    </item>
+    <item>
+      <title>Building an AI-native revenue organization</title>
+      <link>https://claude.com/blog/building-an-ai-native-revenue-organization</link>
+      <description>Tags: Enterprise AI</description>
+      <content:encoded>&lt;p&gt;Tags: Enterprise AI&lt;/p&gt;</content:encoded>
+      <guid isPermaLink="false">https://claude.com/blog/building-an-ai-native-revenue-organization</guid>
+      <category>Enterprise AI</category>
+      <pubDate>Tue, 15 Sep 2026 00:00:00 +0000</pubDate>
+      <media:content url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d2279047e82efc257633_6c7219042e95bfef1a126ad5ee8b2c7def8b8b0a-1000x1000.svg" medium="image"/>
+      <media:thumbnail url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d2279047e82efc257633_6c7219042e95bfef1a126ad5ee8b2c7def8b8b0a-1000x1000.svg"/>
+    </item>
+    <item>
+      <title>Bringing Salesforce into Claude</title>
+      <link>https://claude.com/blog/salesforce-in-claude</link>
+      <description>Tags: Enterprise AI</description>
+      <content:encoded>&lt;p&gt;Tags: Enterprise AI&lt;/p&gt;</content:encoded>
+      <guid isPermaLink="false">https://claude.com/blog/salesforce-in-claude</guid>
+      <category>Enterprise AI</category>
+      <pubDate>Tue, 15 Sep 2026 00:00:00 +0000</pubDate>
+      <media:content url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d2279047e82efc257633_6c7219042e95bfef1a126ad5ee8b2c7def8b8b0a-1000x1000.svg" medium="image"/>
+      <media:thumbnail url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d2279047e82efc257633_6c7219042e95bfef1a126ad5ee8b2c7def8b8b0a-1000x1000.svg"/>
+    </item>
     <item>
       <title>Deploying AI from pilot to production</title>
       <link>https://claude.com/blog/deploying-ai-from-pilot-to-production</link>
@@ -196,41 +229,6 @@
       <pubDate>Mon, 24 Aug 2026 00:00:00 +0000</pubDate>
       <media:content url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d226ca443e2e05990c00_83d7d2fe412ceb4dfe627f0d5f3d64aff1a3f5db-1000x1000.svg" medium="image"/>
       <media:thumbnail url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d226ca443e2e05990c00_83d7d2fe412ceb4dfe627f0d5f3d64aff1a3f5db-1000x1000.svg"/>
-    </item>
-    <item>
-      <title>The AI-Native SDLC playbook</title>
-      <link>https://claude.com/blog/the-ai-native-sdlc-playbook</link>
-      <description>Tags: Enterprise AI, Claude Code</description>
-      <content:encoded>&lt;p&gt;Tags: Enterprise AI, Claude Code&lt;/p&gt;</content:encoded>
-      <guid isPermaLink="false">https://claude.com/blog/the-ai-native-sdlc-playbook</guid>
-      <category>Enterprise AI</category>
-      <category>Claude Code</category>
-      <pubDate>Fri, 21 Aug 2026 00:00:00 +0000</pubDate>
-      <media:content url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d222061abf091318fb82_423062049d4676b41d52b16068cbb5e21603190e-1000x1000.svg" medium="image"/>
-      <media:thumbnail url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d222061abf091318fb82_423062049d4676b41d52b16068cbb5e21603190e-1000x1000.svg"/>
-    </item>
-    <item>
-      <title>Bringing the cybersecurity capabilities of Claude Mythos 5 to more defenders</title>
-      <link>https://claude.com/blog/bringing-claude-mythos-5-to-more-defenders</link>
-      <description>Tags: Product announcements</description>
-      <content:encoded>&lt;p&gt;Tags: Product announcements&lt;/p&gt;</content:encoded>
-      <guid isPermaLink="false">https://claude.com/blog/bringing-claude-mythos-5-to-more-defenders</guid>
-      <category>Product announcements</category>
-      <pubDate>Fri, 21 Aug 2026 00:00:00 +0000</pubDate>
-      <media:content url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d2308749b4e883cc44b7_e029027e0b3beeb5b629bd4a26143597e7775b38-1000x1000.svg" medium="image"/>
-      <media:thumbnail url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d2308749b4e883cc44b7_e029027e0b3beeb5b629bd4a26143597e7775b38-1000x1000.svg"/>
-    </item>
-    <item>
-      <title>Anthropic’s approach to teaching and learning AI</title>
-      <link>https://claude.com/blog/anthropics-approach-to-teaching-and-learning-ai</link>
-      <description>Tags: Product announcements, Enterprise AI</description>
-      <content:encoded>&lt;p&gt;Tags: Product announcements, Enterprise AI&lt;/p&gt;</content:encoded>
-      <guid isPermaLink="false">https://claude.com/blog/anthropics-approach-to-teaching-and-learning-ai</guid>
-      <category>Product announcements</category>
-      <category>Enterprise AI</category>
-      <pubDate>Thu, 20 Aug 2026 00:00:00 +0000</pubDate>
-      <media:content url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d223de65e7dcca8267d8_ea364001be6bf6d2e86b58109ead6a779d5771a7-1000x1000.svg" medium="image"/>
-      <media:thumbnail url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d223de65e7dcca8267d8_ea364001be6bf6d2e86b58109ead6a779d5771a7-1000x1000.svg"/>
     </item>
   </channel>
 </rss>
