@@ -8,7 +8,18 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 16 Sep 2026 11:01:39 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 17 Sep 2026 11:12:08 +0000</lastBuildDate>
+    <item>
+      <title>Claude Cowork and chat are now one Claude</title>
+      <link>https://claude.com/blog/cowork-is-now-claude</link>
+      <description>Tags: Product announcements</description>
+      <content:encoded>&lt;p&gt;Tags: Product announcements&lt;/p&gt;</content:encoded>
+      <guid isPermaLink="false">https://claude.com/blog/cowork-is-now-claude</guid>
+      <category>Product announcements</category>
+      <pubDate>Wed, 16 Sep 2026 00:00:00 +0000</pubDate>
+      <media:content url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6aaaa060d1aec4a549c537ef_Object-Easel.svg" medium="image"/>
+      <media:thumbnail url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6aaaa060d1aec4a549c537ef_Object-Easel.svg"/>
+    </item>
     <item>
       <title>Claude for Small Business launches new workflows, integrations, and training programs</title>
       <link>https://claude.com/blog/claude-for-small-business-launches-new-workflows-integrations-and-training-programs</link>
@@ -218,17 +229,6 @@
       <pubDate>Tue, 25 Aug 2026 00:00:00 +0000</pubDate>
       <media:content url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d22727482c9ba6a02e71_1576ae23eaf481f33bd36ab468171cc69d12361a-1000x1000.svg" medium="image"/>
       <media:thumbnail url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d22727482c9ba6a02e71_1576ae23eaf481f33bd36ab468171cc69d12361a-1000x1000.svg"/>
-    </item>
-    <item>
-      <title>How an Anthropic field marketer uses Claude Code to send weekly personalized updates to every sales rep</title>
-      <link>https://claude.com/blog/how-an-anthropic-field-marketer-uses-claude-code-to-send-weekly-personalized-updates-to-every-sales-rep</link>
-      <description>Tags: Claude Code</description>
-      <content:encoded>&lt;p&gt;Tags: Claude Code&lt;/p&gt;</content:encoded>
-      <guid isPermaLink="false">https://claude.com/blog/how-an-anthropic-field-marketer-uses-claude-code-to-send-weekly-personalized-updates-to-every-sales-rep</guid>
-      <category>Claude Code</category>
-      <pubDate>Mon, 24 Aug 2026 00:00:00 +0000</pubDate>
-      <media:content url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d226ca443e2e05990c00_83d7d2fe412ceb4dfe627f0d5f3d64aff1a3f5db-1000x1000.svg" medium="image"/>
-      <media:thumbnail url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d226ca443e2e05990c00_83d7d2fe412ceb4dfe627f0d5f3d64aff1a3f5db-1000x1000.svg"/>
     </item>
   </channel>
 </rss>
