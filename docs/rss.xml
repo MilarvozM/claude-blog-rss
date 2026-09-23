@@ -8,7 +8,18 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 22 Sep 2026 11:09:15 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 23 Sep 2026 10:59:19 +0000</lastBuildDate>
+    <item>
+      <title>What a task costs on Opus 5.5</title>
+      <link>https://claude.com/blog/what-a-task-costs-on-opus-5-5</link>
+      <description>Tags: Claude Code</description>
+      <content:encoded>&lt;p&gt;Tags: Claude Code&lt;/p&gt;</content:encoded>
+      <guid isPermaLink="false">https://claude.com/blog/what-a-task-costs-on-opus-5-5</guid>
+      <category>Claude Code</category>
+      <pubDate>Tue, 22 Sep 2026 00:00:00 +0000</pubDate>
+      <media:content url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d2279047e82efc257633_6c7219042e95bfef1a126ad5ee8b2c7def8b8b0a-1000x1000.svg" medium="image"/>
+      <media:thumbnail url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d2279047e82efc257633_6c7219042e95bfef1a126ad5ee8b2c7def8b8b0a-1000x1000.svg"/>
+    </item>
     <item>
       <title>Projects redesigned: from folder to conversation</title>
       <link>https://claude.com/blog/projects-redesigned</link>
@@ -197,17 +208,6 @@
       <pubDate>Fri, 28 Aug 2026 00:00:00 +0000</pubDate>
       <media:content url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6a90479f5433ec75978f1e8a_Object-Apple.svg" medium="image"/>
       <media:thumbnail url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6a90479f5433ec75978f1e8a_Object-Apple.svg"/>
-    </item>
-    <item>
-      <title>Claude gets its own browser in Cowork</title>
-      <link>https://claude.com/blog/cowork-built-in-browser</link>
-      <description>Tags: Product announcements</description>
-      <content:encoded>&lt;p&gt;Tags: Product announcements&lt;/p&gt;</content:encoded>
-      <guid isPermaLink="false">https://claude.com/blog/cowork-built-in-browser</guid>
-      <category>Product announcements</category>
-      <pubDate>Wed, 26 Aug 2026 00:00:00 +0000</pubDate>
-      <media:content url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d22b8840b2f6f9a40fe0_8925ac952fa2cb8eb5e845b2e44f3e71b33fd695-1000x1000.svg" medium="image"/>
-      <media:thumbnail url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d22b8840b2f6f9a40fe0_8925ac952fa2cb8eb5e845b2e44f3e71b33fd695-1000x1000.svg"/>
     </item>
     <item>
       <title>Claude in Chrome is generally available</title>
