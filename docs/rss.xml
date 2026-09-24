@@ -8,7 +8,41 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 23 Sep 2026 10:59:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 24 Sep 2026 11:18:29 +0000</lastBuildDate>
+    <item>
+      <title>Claude Marketplace: one place to discover plugins, agents, and services from our partners</title>
+      <link>https://claude.com/blog/claude-marketplace</link>
+      <description>Tags: Product announcements</description>
+      <content:encoded>&lt;p&gt;Tags: Product announcements&lt;/p&gt;</content:encoded>
+      <guid isPermaLink="false">https://claude.com/blog/claude-marketplace</guid>
+      <category>Product announcements</category>
+      <pubDate>Wed, 23 Sep 2026 00:00:00 +0000</pubDate>
+      <media:content url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d22930b7622d6096c33d_4d663bd87c391c144b9bca513b3849ccfa00a3b9-1000x1000.svg" medium="image"/>
+      <media:thumbnail url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d22930b7622d6096c33d_4d663bd87c391c144b9bca513b3849ccfa00a3b9-1000x1000.svg"/>
+    </item>
+    <item>
+      <title>How to prepare for AI-driven code modernization projects</title>
+      <link>https://claude.com/blog/how-to-prepare-for-ai-driven-code-modernization-projects</link>
+      <description>Tags: Enterprise AI, Claude Code</description>
+      <content:encoded>&lt;p&gt;Tags: Enterprise AI, Claude Code&lt;/p&gt;</content:encoded>
+      <guid isPermaLink="false">https://claude.com/blog/how-to-prepare-for-ai-driven-code-modernization-projects</guid>
+      <category>Enterprise AI</category>
+      <category>Claude Code</category>
+      <pubDate>Wed, 23 Sep 2026 00:00:00 +0000</pubDate>
+      <media:content url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d229a7aa26ac1b6e96c2_a62b6eb169818f14c35b7a192af269e283f8fa93-1000x1000.svg" medium="image"/>
+      <media:thumbnail url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d229a7aa26ac1b6e96c2_a62b6eb169818f14c35b7a192af269e283f8fa93-1000x1000.svg"/>
+    </item>
+    <item>
+      <title>How CodeRabbit, Power Digital, and ThoughtSpot scale with Snowflake and Vercel on Claude Marketplace</title>
+      <link>https://claude.com/blog/how-coderabbit-power-digital-and-thoughtspot-scale-with-snowflake-and-vercel-on-claude-marketplace</link>
+      <description>Tags: Enterprise AI</description>
+      <content:encoded>&lt;p&gt;Tags: Enterprise AI&lt;/p&gt;</content:encoded>
+      <guid isPermaLink="false">https://claude.com/blog/how-coderabbit-power-digital-and-thoughtspot-scale-with-snowflake-and-vercel-on-claude-marketplace</guid>
+      <category>Enterprise AI</category>
+      <pubDate>Wed, 23 Sep 2026 00:00:00 +0000</pubDate>
+      <media:content url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d2287f90c57df4c9dd97_c1ef4c0b6882dfe985555b52999d370ea88a3c50-1000x1000.svg" medium="image"/>
+      <media:thumbnail url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d2287f90c57df4c9dd97_c1ef4c0b6882dfe985555b52999d370ea88a3c50-1000x1000.svg"/>
+    </item>
     <item>
       <title>What a task costs on Opus 5.5</title>
       <link>https://claude.com/blog/what-a-task-costs-on-opus-5-5</link>
@@ -188,17 +222,6 @@
       <media:thumbnail url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d222061abf091318fb82_423062049d4676b41d52b16068cbb5e21603190e-1000x1000.svg"/>
     </item>
     <item>
-      <title>How Anthropic employees use Claude Tag</title>
-      <link>https://claude.com/blog/how-anthropic-employees-use-claude-tag</link>
-      <description>Tags: Enterprise AI</description>
-      <content:encoded>&lt;p&gt;Tags: Enterprise AI&lt;/p&gt;</content:encoded>
-      <guid isPermaLink="false">https://claude.com/blog/how-anthropic-employees-use-claude-tag</guid>
-      <category>Enterprise AI</category>
-      <pubDate>Fri, 28 Aug 2026 00:00:00 +0000</pubDate>
-      <media:content url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/692f783c784823d48ad84175_Object-CodeChatText.svg" medium="image"/>
-      <media:thumbnail url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/692f783c784823d48ad84175_Object-CodeChatText.svg"/>
-    </item>
-    <item>
       <title>Claude for Teachers, now available for schools and districts</title>
       <link>https://claude.com/blog/claude-for-teachers-now-available-for-schools-and-districts</link>
       <description>Tags: Product announcements</description>
@@ -208,28 +231,6 @@
       <pubDate>Fri, 28 Aug 2026 00:00:00 +0000</pubDate>
       <media:content url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6a90479f5433ec75978f1e8a_Object-Apple.svg" medium="image"/>
       <media:thumbnail url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6a90479f5433ec75978f1e8a_Object-Apple.svg"/>
-    </item>
-    <item>
-      <title>Claude in Chrome is generally available</title>
-      <link>https://claude.com/blog/claude-in-chrome-generally-available</link>
-      <description>Tags: Product announcements</description>
-      <content:encoded>&lt;p&gt;Tags: Product announcements&lt;/p&gt;</content:encoded>
-      <guid isPermaLink="false">https://claude.com/blog/claude-in-chrome-generally-available</guid>
-      <category>Product announcements</category>
-      <pubDate>Wed, 26 Aug 2026 00:00:00 +0000</pubDate>
-      <media:content url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d22d0099a66d72e05699_33ddc751e21fb4b116b3f57dd553f0bc55ea09d1-1000x1000.svg" medium="image"/>
-      <media:thumbnail url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d22d0099a66d72e05699_33ddc751e21fb4b116b3f57dd553f0bc55ea09d1-1000x1000.svg"/>
-    </item>
-    <item>
-      <title>How Warp builds self-improving agents on Claude</title>
-      <link>https://claude.com/blog/how-warp-builds-self-improving-agents-on-claude</link>
-      <description>Tags: Agents</description>
-      <content:encoded>&lt;p&gt;Tags: Agents&lt;/p&gt;</content:encoded>
-      <guid isPermaLink="false">https://claude.com/blog/how-warp-builds-self-improving-agents-on-claude</guid>
-      <category>Agents</category>
-      <pubDate>Wed, 26 Aug 2026 00:00:00 +0000</pubDate>
-      <media:content url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d225485fe31f1ed2d9a1_db28a79c9f4492b8471009d4c20e900f234ece48-1000x1000.svg" medium="image"/>
-      <media:thumbnail url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d225485fe31f1ed2d9a1_db28a79c9f4492b8471009d4c20e900f234ece48-1000x1000.svg"/>
     </item>
   </channel>
 </rss>
