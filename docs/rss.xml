@@ -8,7 +8,31 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 24 Sep 2026 11:18:29 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 25 Sep 2026 11:23:33 +0000</lastBuildDate>
+    <item>
+      <title>Coding sessions are longer and use more context. Claude Opus 5.5 is built with that in mind.</title>
+      <link>https://claude.com/blog/claude-opus-5-5-built-for-coding-sessions-that-use-more-context</link>
+      <description>Tags: Claude Code, Enterprise AI</description>
+      <content:encoded>&lt;p&gt;Tags: Claude Code, Enterprise AI&lt;/p&gt;</content:encoded>
+      <guid isPermaLink="false">https://claude.com/blog/claude-opus-5-5-built-for-coding-sessions-that-use-more-context</guid>
+      <category>Claude Code</category>
+      <category>Enterprise AI</category>
+      <pubDate>Thu, 24 Sep 2026 00:00:00 +0000</pubDate>
+      <media:content url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d225e31f7aa22c1f28cb_46e4aa7ea208ed440d5bd9e9e3a0ee66bc336ff1-1000x1000.svg" medium="image"/>
+      <media:thumbnail url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d225e31f7aa22c1f28cb_46e4aa7ea208ed440d5bd9e9e3a0ee66bc336ff1-1000x1000.svg"/>
+    </item>
+    <item>
+      <title>Claude Tag now supports personal connectors in channels</title>
+      <link>https://claude.com/blog/claude-tag-now-supports-personal-connectors-in-channels</link>
+      <description>Tags: Product announcements, Enterprise AI</description>
+      <content:encoded>&lt;p&gt;Tags: Product announcements, Enterprise AI&lt;/p&gt;</content:encoded>
+      <guid isPermaLink="false">https://claude.com/blog/claude-tag-now-supports-personal-connectors-in-channels</guid>
+      <category>Product announcements</category>
+      <category>Enterprise AI</category>
+      <pubDate>Thu, 24 Sep 2026 00:00:00 +0000</pubDate>
+      <media:content url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d22deea97e4a5b5e5739_8d339ae8ecedecc1409db8f5bbb99c958db56946-1000x1000.svg" medium="image"/>
+      <media:thumbnail url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d22deea97e4a5b5e5739_8d339ae8ecedecc1409db8f5bbb99c958db56946-1000x1000.svg"/>
+    </item>
     <item>
       <title>Claude Marketplace: one place to discover plugins, agents, and services from our partners</title>
       <link>https://claude.com/blog/claude-marketplace</link>
@@ -199,18 +223,6 @@
       <media:thumbnail url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6a0112e18cdd7f0b92d19e40_Hand-BuildingBricks.svg"/>
     </item>
     <item>
-      <title>Building commerce agents with Claude</title>
-      <link>https://claude.com/blog/claude-for-commerce-agents</link>
-      <description>Tags: Product announcements, Agents</description>
-      <content:encoded>&lt;p&gt;Tags: Product announcements, Agents&lt;/p&gt;</content:encoded>
-      <guid isPermaLink="false">https://claude.com/blog/claude-for-commerce-agents</guid>
-      <category>Product announcements</category>
-      <category>Agents</category>
-      <pubDate>Wed, 02 Sep 2026 00:00:00 +0000</pubDate>
-      <media:content url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d228c83775fcc75f4e6d_74409af25137110ac04cc39e4d5ea0a2fbcea421-1000x1000.svg" medium="image"/>
-      <media:thumbnail url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d228c83775fcc75f4e6d_74409af25137110ac04cc39e4d5ea0a2fbcea421-1000x1000.svg"/>
-    </item>
-    <item>
       <title>A guide to the anatomy of effective commerce agents</title>
       <link>https://claude.com/blog/the-anatomy-of-effective-commerce-agents</link>
       <description>Tags: Agents</description>
@@ -220,17 +232,6 @@
       <pubDate>Wed, 02 Sep 2026 00:00:00 +0000</pubDate>
       <media:content url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d222061abf091318fb82_423062049d4676b41d52b16068cbb5e21603190e-1000x1000.svg" medium="image"/>
       <media:thumbnail url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6903d222061abf091318fb82_423062049d4676b41d52b16068cbb5e21603190e-1000x1000.svg"/>
-    </item>
-    <item>
-      <title>Claude for Teachers, now available for schools and districts</title>
-      <link>https://claude.com/blog/claude-for-teachers-now-available-for-schools-and-districts</link>
-      <description>Tags: Product announcements</description>
-      <content:encoded>&lt;p&gt;Tags: Product announcements&lt;/p&gt;</content:encoded>
-      <guid isPermaLink="false">https://claude.com/blog/claude-for-teachers-now-available-for-schools-and-districts</guid>
-      <category>Product announcements</category>
-      <pubDate>Fri, 28 Aug 2026 00:00:00 +0000</pubDate>
-      <media:content url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6a90479f5433ec75978f1e8a_Object-Apple.svg" medium="image"/>
-      <media:thumbnail url="https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6a90479f5433ec75978f1e8a_Object-Apple.svg"/>
     </item>
   </channel>
 </rss>
